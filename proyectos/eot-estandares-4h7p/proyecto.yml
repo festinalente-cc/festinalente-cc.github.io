@@ -1,0 +1,72 @@
+publicar: true
+
+titulo: Estándares de cuidado de la enfermedad ocular tiroidea en adultos en Colombia
+subtitulo: Panel de expertos con el método de apropiación RAND/UCLA. Material de trabajo del panel, ronda 1.
+cliente: Proyecto de consenso
+codigo: EOT-2026
+inicio: 2026-09
+fin_previsto: 2027-01
+fase: Ejecución
+
+equipo:
+  - nombre: Carlos E. Builes-Montaño
+    rol: Dirección científica y metodología
+  - nombre: Secretaría técnica Festina Lente
+    rol: Coordinación del panel y manejo de datos
+
+# El panel se publicará con nombre, afiliación y ciudad después de la reunión del 5 de diciembre,
+# cuando los panelistas se conozcan entre sí. Durante la ronda 1 las calificaciones son anónimas para el grupo.
+
+ahora:
+  titulo: Ronda 1 abierta hasta el 21 de noviembre
+  texto: >-
+    Complete primero el registro (Paso 1). Luego lea la ficha de cada pregunta, P01 a P19, y califique sus afirmaciones
+    al final de cada página; puede hacerlo en varias sesiones y en el orden que prefiera. Termine con los parámetros
+    numéricos (Paso 3). Use siempre el mismo correo electrónico.
+  plazo: 2026-11-21
+
+cronograma:
+  - fecha: 2026-11-08
+    hito: Inicio de la ronda 1 (calificación individual, a distancia)
+    estado: en-curso
+  - fecha: 2026-11-21
+    hito: Cierre de la ronda 1
+    estado: pendiente
+  - fecha: 2026-12-01
+    hito: Envío a cada panelista de su retroalimentación individual y la agenda de la reunión
+    estado: pendiente
+  - fecha: 2026-12-05
+    hito: Reunión presencial del panel
+    estado: pendiente
+  - fecha: 2026-12-07
+    hito: Inicio de la ronda 2 (ítems revisados; valoración definitiva)
+    estado: pendiente
+  - fecha: 2026-12-11
+    hito: Cierre de la ronda 2
+    estado: pendiente
+  - fecha: 2026-12-18
+    hito: "Informe preliminar: estándares aprobados y no resueltos"
+    estado: pendiente
+  - fecha: 2027-01
+    hito: Redacción de los estándares con sus indicadores y manuscrito (ACCORD)
+    estado: pendiente
+
+documentos:
+  - archivo: Fichas_evidencia_EOT.pdf
+    titulo: Fichas de evidencia (PDF)
+    descripcion: Las 19 fichas en un solo documento, para leer sin conexión o imprimir. El contenido es el mismo de las páginas P01 a P19.
+  - archivo: Anexo_tecnico_evidencia_por_pregunta_EOT.xlsx
+    titulo: Anexo técnico (Excel)
+    descripcion: Una hoja por pregunta con cada fuente, su calidad, las recomendaciones y los resultados, con la cita textual, la página y la línea.
+  - archivo: Referencias_incluidas_EOT.pdf
+    titulo: Referencias incluidas (PDF)
+    descripcion: Las 234 publicaciones de la revisión, por código, con DOI y PubMed y las preguntas a las que aportan.
+  - archivo: Referencias_incluidas_EOT.xlsx
+    titulo: Referencias incluidas (Excel)
+    descripcion: La misma lista en formato de hoja de cálculo.
+
+novedades:
+  - fecha: 2026-11-08
+    texto: Se abre la ronda 1. Plazo para responder, sábado 21 de noviembre.
+
+contacto: cbuiles@festinalente.cc

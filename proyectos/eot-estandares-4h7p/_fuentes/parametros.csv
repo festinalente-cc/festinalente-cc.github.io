@@ -1,0 +1,20 @@
+codigo,titulo,unidad,escenario,preguntas,nota
+par1,Plazo máximo desde la sospecha hasta la valoración presencial por oftalmología,horas,Amenaza visual (sospecha de neuropatía óptica distiroidea o lesión corneal grave),"P03, P07",
+par2,Plazo máximo desde la remisión hasta la primera valoración especializada,días,EOT moderada a severa activa sin amenaza visual,"P07, P17",
+par3,Plazo máximo desde la remisión hasta la primera valoración especializada,semanas,EOT leve con factores de riesgo de progresión,"P07, P09",
+par4,Plazo máximo desde el inicio de los pulsos hasta la decisión de descompresión orbitaria,días,Neuropatía óptica distiroidea sin respuesta a metilprednisolona intravenosa,P11,
+par5,Momento para la evaluación formal de la respuesta,semanas desde el inicio,EOT activa moderada a severa en metilprednisolona intravenosa,P14,
+par6,Intervalo entre controles especializados,semanas,"EOT leve activa en vigilancia, sin tratamiento inmunomodulador","P09, P14",
+par7,Intervalo entre controles especializados,meses,EOT inactiva estable,P14,
+par8,Duración mínima del seguimiento especializado para detectar reactivación,meses,Tras finalizar un tratamiento inmunomodulador,P14,
+par9,Tiempo mínimo de inactividad antes de la cirugía,meses,EOT inactiva con indicación de cirugía rehabilitadora,P13,
+par10,Intervalo entre controles de glucemia durante teprotumumab,semanas,"Adulto sin diabetes ni prediabetes conocidas, desde la primera infusión hasta el final del ciclo",P12,
+par11,Intervalo entre controles de glucemia durante teprotumumab,semanas,"Adulto con diabetes o prediabetes, desde la primera infusión hasta el final del ciclo",P12,
+par12,Intervalo entre evaluaciones auditivas durante teprotumumab,semanas,"Cualquier adulto en tratamiento, con audiometría basal antes de la primera infusión",P12,"Si prefiere expresarlo en número de infusiones, indíquelo en el fundamento"
+par13,Periodicidad de la auditoría de los indicadores de calidad,meses,Servicio especializado que atiende adultos con EOT,P18,
+par14,Umbral mínimo de cumplimiento de un indicador de proceso,porcentaje de pacientes,Proporción de pacientes en los que debe verificarse un estándar de proceso para considerar adecuada la atención del servicio,P18,Umbral genérico; los umbrales por indicador se definirán en la reunión del panel
+par15,"Intervalo entre controles de seguridad (enzimas hepáticas, glucemia, presión arterial)",semanas,Adulto en ciclo de metilprednisolona intravenosa semanal por EOT moderada a severa,P12,
+par16,Plazo máximo desde el diagnóstico de neuropatía óptica distiroidea hasta la primera dosis de metilprednisolona intravenosa,horas,Adulto con NOD confirmada en un servicio con acceso al medicamento,P11,
+par17,Plazo máximo de respuesta a una interconsulta o contrarreferencia entre endocrinología y oftalmología,días,"EOT activa en manejo compartido, sin amenaza visual",P15,
+par18,Tiempo sin actividad tras el cual el seguimiento puede devolverse a atención primaria o a endocrinología general,meses,"EOT inactiva, sin secuelas que requieran cirugía, eutiroidea",P15,
+par19,Frecuencia de las revisiones conjuntas o reuniones del equipo multidisciplinario de EOT,semanas,Servicio especializado que atiende adultos con EOT activa,P19,

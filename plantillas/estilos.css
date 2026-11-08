@@ -536,3 +536,23 @@ footer h2 { font-size: 2.8rem; }
 .py-version .py-estado.superada { color: var(--grey); }
 .py-version.superada h3 { color: var(--muted); font-weight: 500; }
 .py-version .py-nota { display: block; color: var(--muted); font-size: .9rem; margin-top: 6px; }
+
+/* Subpáginas de proyecto */
+.py-hero-pagina { padding-bottom: clamp(40px, 5vw, 70px); }
+.py-hero-pagina .eyebrow a { color: inherit; border-bottom: 1px solid rgba(255,255,255,.4); }
+.py-contenido table { border-collapse: collapse; width: 100%; font-size: .9rem; margin: 0 0 24px; display: block; overflow-x: auto; }
+.py-contenido th, .py-contenido td { border-bottom: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+.py-contenido th { font-weight: 600; color: var(--charcoal); border-bottom-color: var(--charcoal); }
+.py-contenido ol li::marker { font-weight: 600; color: var(--charcoal); }
+.py-contenido blockquote { border-left: 3px solid var(--charcoal); margin: 0 0 18px; padding: 4px 0 4px 18px; color: var(--charcoal); }
+.py-form { margin-top: 56px; border-top: 1px solid var(--charcoal); padding-top: 20px; }
+.py-form iframe { width: 100%; height: 1400px; border: 1px solid var(--line); background: var(--white); }
+.py-prevnext { display: flex; justify-content: space-between; gap: 20px; margin-top: 48px; border-top: 1px solid var(--line); padding-top: 18px; font-size: .95rem; }
+.py-prevnext a { border-bottom: 0; color: var(--charcoal); font-weight: 600; }
+.py-indice { list-style: none; padding: 0; margin: 14px 0 0; }
+.py-indice li { padding: 6px 0; border-bottom: 1px solid var(--line); font-size: .9rem; }
+.py-indice li:last-child { border-bottom: 0; }
+.py-indice li.actual a { font-weight: 700; color: var(--charcoal); }
+.py-indice a { color: var(--muted); }
+.py-indice-grupo + .py-indice-grupo { margin-top: 30px; }
+.py-aviso { background: var(--paper); border-left: 3px solid var(--softteal); padding: 14px 18px; margin: 0 0 24px; font-size: .95rem; }

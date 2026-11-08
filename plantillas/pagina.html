@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block titulo %}{{ pg.titulo }} · {{ p.titulo }} | {{ sitio.nombre }}{% endblock %}
+{% block descripcion %}{{ pg.resumen or p.subtitulo or p.titulo }}{% endblock %}
+{% block robots %}<meta name="robots" content="noindex, nofollow">{% endblock %}
+{% block nav %}
+  <a href="{{ raiz }}p/{{ slug }}/">Inicio del proyecto</a>
+  <a href="{{ raiz }}p/{{ slug }}/#paginas">Contenido</a>
+  {% if p.documentos %}<a href="{{ raiz }}p/{{ slug }}/#documentos">Documentos</a>{% endif %}
+  <a class="nav-contact" href="mailto:{{ p.contacto or sitio.correo }}">Contacto</a>
+{% endblock %}
+{% block pie_titulo %}¿Dudas sobre este proyecto?{% endblock %}
+{% block pie_texto %}Escríbanos por correo o por WhatsApp. Esta página es de uso interno del equipo y del panel; por favor no comparta el enlace fuera del grupo de trabajo.{% endblock %}
+{% block cuerpo %}
+<section class="py-hero py-hero-pagina">
+  <div class="py-hero-content">
+    <span class="eyebrow light"><a href="{{ raiz }}p/{{ slug }}/">{{ p.titulo }}</a>{% if pg.grupo %} · {{ pg.grupo }}{% endif %}</span>
+    <h1>{{ pg.titulo }}</h1>
+    {% if pg.resumen %}<p>{{ pg.resumen }}</p>{% endif %}
+  </div>
+</section>
+
+<section class="section py-cuerpo">
+  <article class="py-contenido">
+    {{ pg.html | safe }}
+    {% if pg.formulario %}
+    <div class="py-form" id="formulario">
+      <h2>Calificación</h2>
+      <p>Responda aquí mismo o <a href="{{ pg.formulario }}" target="_blank" rel="noopener">abra el formulario en otra pestaña</a>. Use el mismo correo que en el registro.</p>
+      <iframe src="{{ pg.formulario }}" title="Formulario: {{ pg.titulo }}" loading="lazy" allow="geolocation"></iframe>
+    </div>
+    {% endif %}
+    <nav class="py-prevnext" aria-label="Páginas vecinas">
+      {% if anterior %}<a href="{{ raiz }}p/{{ slug }}/{{ anterior.nombre }}/">← {{ anterior.titulo }}</a>{% else %}<span></span>{% endif %}
+      {% if siguiente %}<a href="{{ raiz }}p/{{ slug }}/{{ siguiente.nombre }}/">{{ siguiente.titulo }} →</a>{% endif %}
+    </nav>
+  </article>
+  <aside class="py-lateral">
+    {% for g in p.grupos_paginas %}
+    <div class="py-bloque">
+      <span class="eyebrow">{{ g.nombre or 'Páginas' }}</span>
+      <ul class="py-indice">{% for q in g.paginas %}<li{% if q.nombre == pg.nombre %} class="actual"{% endif %}><a href="{{ raiz }}p/{{ slug }}/{{ q.nombre }}/">{{ q.titulo }}</a></li>{% endfor %}</ul>
+    </div>
+    {% endfor %}
+  </aside>
+</section>
+{% endblock %}

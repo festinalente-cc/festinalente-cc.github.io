@@ -69,6 +69,15 @@ def fecha_git(ruta: Path) -> dt.date:
     return dt.date.today()
 
 
+def separar_frontmatter(texto: str):
+    """Devuelve (meta, cuerpo) si el archivo empieza con un bloque YAML entre '---'."""
+    if texto.startswith("---"):
+        partes = texto.split("---", 2)
+        if len(partes) == 3:
+            return (yaml.safe_load(partes[1]) or {}), partes[2].lstrip("\n")
+    return {}, texto
+
+
 def main() -> int:
     sitio = yaml.safe_load((RAIZ / "sitio.yml").read_text(encoding="utf-8"))
     env = Environment(loader=FileSystemLoader(PLANTILLAS),
@@ -141,10 +150,41 @@ def main() -> int:
         fase_idx = fases.index(p["fase"]) if p.get("fase") in fases else -1
         p.setdefault("actualizado", fecha_git(carpeta))
 
+        # Subpáginas: proyectos/<slug>/paginas/<nombre>.md con encabezado YAML
+        # (titulo, orden, grupo, resumen, formulario). Se publican en /p/<slug>/<nombre>/.
+        paginas = []
+        carpeta_pag = carpeta / "paginas"
+        if carpeta_pag.exists():
+            for archivo in sorted(carpeta_pag.glob("*.md")):
+                meta, texto = separar_frontmatter(archivo.read_text(encoding="utf-8"))
+                md.reset()
+                paginas.append(dict(
+                    nombre=archivo.stem, titulo=meta.get("titulo", archivo.stem),
+                    orden=meta.get("orden", 999), grupo=meta.get("grupo", ""),
+                    resumen=meta.get("resumen", ""), formulario=meta.get("formulario"),
+                    html=md.convert(texto)))
+            paginas.sort(key=lambda x: (x["orden"], x["nombre"]))
+            grupos = []
+            for pg in paginas:
+                if not grupos or grupos[-1]["nombre"] != pg["grupo"]:
+                    grupos.append(dict(nombre=pg["grupo"], paginas=[]))
+                grupos[-1]["paginas"].append(pg)
+            p["paginas"] = paginas
+            p["grupos_paginas"] = grupos
+            plantilla_pag = env.get_template("pagina.html")
+            for i, pg in enumerate(paginas):
+                d = destino / pg["nombre"]
+                d.mkdir(parents=True)
+                (d / "index.html").write_text(
+                    plantilla_pag.render(raiz="/", p=p, pg=pg, slug=slug,
+                                         anterior=paginas[i - 1] if i > 0 else None,
+                                         siguiente=paginas[i + 1] if i + 1 < len(paginas) else None,
+                                         **comun), encoding="utf-8")
+
         (destino / "index.html").write_text(
             plantilla.render(raiz="/", p=p, cuerpo=cuerpo, fase_idx=fase_idx, **comun),
             encoding="utf-8")
-        publicados.append(slug)
+        publicados.append(slug + (f" (+{len(paginas)} páginas)" if paginas else ""))
 
     print(f"Portada y {len(publicados)} proyecto(s): {', '.join(publicados)}")
     return 0

@@ -3,6 +3,7 @@
 {% block descripcion %}{{ p.subtitulo or p.titulo }}{% endblock %}
 {% block robots %}<meta name="robots" content="noindex, nofollow">{% endblock %}
 {% block nav %}
+  {% if p.paginas %}<a href="#paginas">Contenido</a>{% endif %}
   {% if p.versiones %}<a href="#versiones">Versiones</a>{% endif %}
   {% if p.documentos %}<a href="#documentos">Documentos</a>{% endif %}
   {% if p.cronograma %}<a href="#cronograma">Cronograma</a>{% endif %}
@@ -64,6 +65,23 @@
     {% endif %}
   </aside>
 </section>
+
+{% if p.paginas %}
+<section class="section py-seccion approach" id="paginas">
+  <div class="section-title"><span class="eyebrow">Contenido</span><h2>Páginas del proyecto</h2></div>
+  {% for g in p.grupos_paginas %}
+  <div class="service-list py-indice-grupo">
+    {% for q in g.paginas %}
+    <a class="service py-doc" href="{{ q.nombre }}/">
+      <span>{{ g.nombre }}</span>
+      <h3>{{ q.titulo }}</h3>
+      <p>{{ q.resumen or '' }}<em class="py-descargar">Abrir →</em></p>
+    </a>
+    {% endfor %}
+  </div>
+  {% endfor %}
+</section>
+{% endif %}
 
 {% if p.versiones %}
 <section class="section py-seccion services-section" id="versiones">
