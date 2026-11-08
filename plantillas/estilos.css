@@ -44,7 +44,7 @@ p { margin: 0 0 1em; }
 .cabecera .contenedor { display: flex; align-items: center; justify-content: space-between; height: 68px; }
 .marca { display: flex; align-items: center; gap: 12px; color: var(--tinta); font-family: var(--serif); font-size: 1.25rem; font-weight: 600; }
 .marca:hover { text-decoration: none; }
-.marca img { height: 34px; width: auto; display: block; }
+.marca img { height: 46px; width: auto; display: block; }
 .marca .isotipo { width: 30px; height: 30px; border-radius: 50%; background: var(--acento); display: inline-block; }
 nav a { margin-left: 22px; color: var(--tinta); font-size: .95rem; }
 nav a:hover { color: var(--acento); text-decoration: none; }
