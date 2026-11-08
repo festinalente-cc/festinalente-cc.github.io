@@ -21,9 +21,7 @@
 <header class="site-header">
   <a class="brand" href="{{ raiz }}" aria-label="Festina Lente, inicio"><img class="brand-wordmark" src="{{ raiz }}brand/wordmark-dark.png" alt="Festina Lente Consulting"></a>
   <nav aria-label="Navegación principal">{% block nav %}
-    <a href="{{ raiz }}#servicios">Servicios</a>
-    <a href="{{ raiz }}#trabajo">Experiencia</a>
-    <a href="{{ raiz }}#capacidades">Capacidades</a>
+    <a href="{{ sitio.url }}">Sitio principal</a>
     <a class="nav-contact" href="mailto:{{ sitio.correo }}">Contacto</a>
   {% endblock %}</nav>
 </header>

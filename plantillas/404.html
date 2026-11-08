@@ -1,11 +1,15 @@
 {% extends "base.html" %}
 {% block titulo %}Página no encontrada | {{ sitio.nombre }}{% endblock %}
 {% block robots %}<meta name="robots" content="noindex">{% endblock %}
+{% block nav %}
+  <a href="{{ sitio.url }}">Sitio principal</a>
+  <a class="nav-contact" href="mailto:{{ sitio.correo }}">Contacto</a>
+{% endblock %}
 {% block cuerpo %}
 <section class="py-404">
   <span class="eyebrow">Error 404</span>
   <h1>No encontramos esa página</h1>
   <p>Si llegó aquí desde el enlace de un proyecto, revise que esté completo o escríbanos a <a href="mailto:{{ sitio.correo }}">{{ sitio.correo }}</a>.</p>
-  <a class="hero-link" href="/">Ir al inicio</a>
+  <a class="hero-link" href="{{ sitio.url }}">Ir a festinalente.cc</a>
 </section>
 {% endblock %}
