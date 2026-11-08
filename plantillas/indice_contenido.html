@@ -1,0 +1,23 @@
+<div class="section-title"><span class="eyebrow">Proyectos</span><h2>{{ proyectos | length }} proyecto{{ 's' if proyectos | length != 1 }}</h2></div>
+<div class="py-indice-lista">
+{% for p in proyectos %}
+  <article class="py-ficha {% if not p.publicado %}oculto{% endif %}">
+    <div class="py-ficha-cab">
+      <div>
+        <span class="eyebrow">{{ p.fase or 'Sin fase' }}{% if not p.publicado %} · No publicado{% endif %}{% if p.cliente %} · {{ p.cliente }}{% endif %}</span>
+        <h3>{{ p.titulo }}</h3>
+        {% if p.plazo %}<p class="py-plazo">Plazo vigente: {{ p.plazo | fecha }}{% if p.ahora_titulo %} — {{ p.ahora_titulo }}{% endif %}</p>{% endif %}
+      </div>
+    </div>
+    <div class="py-ficha-url"><a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.url }}</a></div>
+    <div class="hero-actions">
+      <button class="hero-contact copiar" type="button" data-url="{{ p.url }}">Copiar enlace</button>
+      <a class="hero-link" href="https://wa.me/?text={{ p.mensaje | urlencode }}" target="_blank" rel="noopener">Enviar por WhatsApp</a>
+      <a class="hero-link" href="mailto:?subject={{ p.asunto | urlencode }}&body={{ p.mensaje | urlencode }}">Enviar por correo</a>
+      <button class="hero-link copiar" type="button" data-url="{{ p.mensaje }}" style="background:none;border:0;border-bottom:1px solid var(--charcoal);cursor:pointer;font:inherit;padding:0 0 4px;">Copiar mensaje</button>
+    </div>
+    <details class="py-mensaje"><summary>Ver el mensaje</summary><pre>{{ p.mensaje }}</pre></details>
+  </article>
+{% endfor %}
+</div>
+<p class="py-nota-indice">El índice se genera automáticamente a partir de las carpetas de <code>proyectos/</code>. Para cambiar el texto del mensaje, edite <code>mensaje</code> en el <code>proyecto.yml</code> de cada proyecto o la plantilla general en <code>sitio.yml</code>.</p>

@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block titulo %}Índice de proyectos | {{ sitio.nombre }}{% endblock %}
+{% block robots %}<meta name="robots" content="noindex, nofollow">{% endblock %}
+{% block nav %}
+  <a href="{{ sitio.url }}">Sitio principal</a>
+{% endblock %}
+{% block pie_titulo %}Uso interno{% endblock %}
+{% block pie_texto %}Esta página está cifrada. Solo el equipo de Festina Lente tiene la clave.{% endblock %}
+{% block cuerpo %}
+<section class="py-hero" style="padding-bottom: 56px;">
+  <div class="py-hero-content">
+    <span class="eyebrow light">Uso interno</span>
+    <h1>Índice de proyectos</h1>
+    <p>Enlaces de los micrositios, listos para copiar o enviar por WhatsApp.</p>
+  </div>
+</section>
+
+<section class="section" id="candado">
+  <form class="py-candado" onsubmit="return abrir(event)">
+    <span class="eyebrow">Clave</span>
+    <div>
+      <input id="clave" type="password" autocomplete="current-password" placeholder="Escriba la clave" required>
+      <button class="hero-contact" type="submit">Abrir</button>
+      <p id="error" class="py-error" hidden>La clave no es correcta.</p>
+    </div>
+  </form>
+</section>
+
+<section class="section py-indice" id="contenido" hidden></section>
+
+<script id="cifrado" type="application/json">{{ cifrado | safe }}</script>
+<script>
+const $ = s => document.querySelector(s);
+const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+async function descifrar(clave) {
+  const d = JSON.parse($('#cifrado').textContent);
+  const km = await crypto.subtle.importKey('raw', new TextEncoder().encode(clave), 'PBKDF2', false, ['deriveKey']);
+  const k = await crypto.subtle.deriveKey({name:'PBKDF2', salt:b64(d.salt), iterations:d.iter, hash:'SHA-256'}, km, {name:'AES-GCM', length:256}, false, ['decrypt']);
+  const t = await crypto.subtle.decrypt({name:'AES-GCM', iv:b64(d.iv)}, k, b64(d.datos));
+  return new TextDecoder().decode(t);
+}
+async function abrir(ev) {
+  if (ev) ev.preventDefault();
+  const clave = $('#clave').value;
+  try {
+    const html = await descifrar(clave);
+    $('#contenido').innerHTML = html; $('#contenido').hidden = false; $('#candado').hidden = true;
+    try { sessionStorage.setItem('fl-clave', clave); } catch (e) {}
+    document.querySelectorAll('.copiar').forEach(b => b.addEventListener('click', async () => {
+      await navigator.clipboard.writeText(b.dataset.url); const t = b.textContent; b.textContent = 'Copiado'; setTimeout(() => b.textContent = t, 1400);
+    }));
+  } catch (e) { $('#error').hidden = false; }
+  return false;
+}
+try { const c = sessionStorage.getItem('fl-clave'); if (c) { $('#clave').value = c; abrir(); } } catch (e) {}
+</script>
+{% endblock %}

@@ -462,10 +462,9 @@ footer h2 { font-size: 2.8rem; }
   50% { opacity: 0.5; }
 }
 /* ---------- Micrositios de proyectos (añadido; usa las variables del sitio) ---------- */
-.py-hero { background: var(--charcoal); color: var(--white); padding: clamp(70px, 8vw, 120px) clamp(24px, 5vw, 82px) 0; display: flex; flex-direction: column; gap: 48px; }
+.py-hero { background: var(--charcoal); color: var(--white); padding: clamp(70px, 8vw, 120px) clamp(24px, 5vw, 82px) 0; display: flex; flex-direction: column; gap: 48px; position: relative; isolation: isolate; overflow: hidden; }
 .py-hero .hero-actions { margin-top: 36px; }
 .py-hero-content + .hero-note { margin-top: 0; }
-.py-hero-x { position: relative; isolation: isolate; overflow: hidden; }
 .py-hero::before { content: ""; z-index: -2; filter: grayscale() blur(2px); background: url("/brand/hero-background-v2.jpg") 52% center / cover no-repeat; position: absolute; inset: -8px; transform: scale(1.018); }
 .py-hero::after { content: ""; z-index: -1; background: linear-gradient(90deg, rgba(20,20,22,.97) 0%, rgba(20,20,22,.94) 50%, rgba(20,20,22,.8) 100%); position: absolute; inset: 0; }
 .py-hero-content { max-width: 980px; }
@@ -556,3 +555,24 @@ footer h2 { font-size: 2.8rem; }
 .py-indice a { color: var(--muted); }
 .py-indice-grupo + .py-indice-grupo { margin-top: 30px; }
 .py-aviso { background: var(--paper); border-left: 3px solid var(--softteal); padding: 14px 18px; margin: 0 0 24px; font-size: .95rem; }
+/* Índice interno cifrado */
+.py-candado { display: grid; grid-template-columns: 0.45fr 1.55fr; gap: 50px; align-items: start; }
+.py-candado input { font: inherit; font-size: 1.05rem; padding: 14px 18px; border: 1px solid var(--line); background: var(--white); width: min(360px, 100%); margin-right: 14px; margin-bottom: 14px; }
+.py-candado button { font: inherit; cursor: pointer; border: 0; }
+.py-error { color: #a33; margin-top: 10px; }
+@media (max-width: 850px) { .py-candado { grid-template-columns: 1fr; gap: 20px; } }
+.py-indice-lista { display: grid; gap: 28px; }
+.py-ficha { border-top: 1px solid var(--charcoal); padding: 26px 0 8px; }
+.py-ficha.oculto { opacity: .55; }
+.py-ficha h3 { font-weight: 600; font-size: 1.25rem; margin: 10px 0 6px; letter-spacing: -0.01em; }
+.py-plazo { color: var(--softteal); font-weight: 600; margin: 0; font-size: .95rem; }
+.py-ficha-url { margin: 14px 0 4px; font-size: .95rem; word-break: break-all; }
+.py-ficha-url a { border-bottom: 1px solid var(--line); }
+.py-ficha .hero-actions { margin-top: 18px; }
+.py-ficha .hero-contact { background: var(--charcoal); color: var(--white); border: 0; cursor: pointer; font: inherit; }
+.py-ficha .hero-link { border-bottom-color: var(--charcoal); }
+.py-mensaje { margin-top: 18px; color: var(--muted); font-size: .9rem; }
+.py-mensaje summary { cursor: pointer; }
+.py-mensaje pre { white-space: pre-wrap; font: inherit; background: var(--paper); padding: 16px 18px; margin: 10px 0 0; color: var(--charcoal); line-height: 1.6; }
+.py-nota-indice { color: var(--muted); font-size: .88rem; margin-top: 40px; max-width: 720px; }
+.py-nota-indice code { background: var(--paper); padding: 1px 5px; }

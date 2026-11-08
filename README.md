@@ -6,6 +6,10 @@ Espacio de proyectos de Festina Lente, publicado con GitHub Pages en <https://fe
 - **Proyectos:** una carpeta por proyecto en `proyectos/`, publicada en `/p/<carpeta>/`. No se enlazan desde la portada ni se indexan: solo llega quien tenga el enlace.
 - **Marca:** en `estaticos/brand/` están el isotipo (PNG 1200 px y `isotipo-vector.svg` extraído del manual), los wordmarks claro y oscuro y el fondo del encabezado.
 
+## Índice interno (solo equipo)
+
+`/indice/` lista todos los proyectos con su enlace, botón de copiar y mensaje listo para WhatsApp o correo. La página se cifra al construirse (AES-256-GCM, clave derivada con PBKDF2) con la clave del secreto `INDICE_CLAVE` del repositorio (*Settings → Secrets and variables → Actions*). Sin ese secreto, el índice no se genera. Para cambiar la clave basta cambiar el secreto y volver a publicar. El texto del mensaje sale de `mensaje` en `sitio.yml` (o de `mensaje` en el `proyecto.yml` de un proyecto).
+
 ## Crear un proyecto
 
 1. Copiar `proyectos/ejemplo` con un nombre nuevo. El nombre de la carpeta es la dirección; para que no sea adivinable, agregar un código corto, p. ej. `consenso-eot-7k3q`.

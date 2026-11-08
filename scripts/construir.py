@@ -7,7 +7,10 @@ Proyectos: cada carpeta en proyectos/ con proyecto.yml (+ proyecto.md y document
 """
 from __future__ import annotations
 
+import base64
 import datetime as dt
+import json
+import os
 import shutil
 import subprocess
 import sys
@@ -78,6 +81,49 @@ def separar_frontmatter(texto: str):
     return {}, texto
 
 
+FICHAS: list = []
+
+
+def cifrar(texto: str, clave: str) -> str:
+    """AES-256-GCM con clave derivada por PBKDF2; se descifra con WebCrypto en el navegador."""
+    from cryptography.hazmat.primitives.ciphers.aead import AESGCM
+    from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
+    from cryptography.hazmat.primitives import hashes
+    salt, iv, iteraciones = os.urandom(16), os.urandom(12), 600_000
+    k = PBKDF2HMAC(hashes.SHA256(), 32, salt, iteraciones).derive(clave.encode())
+    datos = AESGCM(k).encrypt(iv, texto.encode("utf-8"), None)
+    b = lambda x: base64.b64encode(x).decode()
+    return json.dumps({"salt": b(salt), "iv": b(iv), "iter": iteraciones, "datos": b(datos)})
+
+
+def construir_indice(env, sitio, comun):
+    clave = os.environ.get("INDICE_CLAVE")
+    if not clave:
+        print("AVISO: sin INDICE_CLAVE; no se genera el índice interno.", file=sys.stderr)
+        return
+    base = sitio.get("url_proyectos") or "https://festinalente-cc.github.io"
+    filas = []
+    for slug, p in FICHAS:
+        url = f"{base}/p/{slug}/"
+        ahora = (p.get("ahora") or {})
+        plazo = ahora.get("plazo")
+        plantilla = p.get("mensaje") or sitio.get("mensaje") or "{url}"
+        mensaje = plantilla.format(
+            titulo=p.get("titulo", slug), url=url,
+            ahora=(ahora.get("titulo") + ". ") if ahora.get("titulo") else "",
+            plazo=f"Plazo para comentarios: {filtro_fecha(plazo)}." if plazo else "")
+        filas.append(dict(slug=slug, url=url, titulo=p.get("titulo", slug), cliente=p.get("cliente"),
+                          fase=p.get("fase"), plazo=plazo, ahora_titulo=ahora.get("titulo"),
+                          publicado=p.get("publicar", True) is not False,
+                          asunto=f"Proyecto: {p.get('titulo', slug)}", mensaje=mensaje))
+    interior = env.get_template("indice_contenido.html").render(proyectos=filas, **comun)
+    (SALIDA / "indice").mkdir(exist_ok=True)
+    (SALIDA / "indice" / "index.html").write_text(
+        env.get_template("indice.html").render(raiz="/", cifrado=cifrar(interior, clave), **comun),
+        encoding="utf-8")
+    print("Índice interno cifrado: /indice/")
+
+
 def main() -> int:
     sitio = yaml.safe_load((RAIZ / "sitio.yml").read_text(encoding="utf-8"))
     env = Environment(loader=FileSystemLoader(PLANTILLAS),
@@ -126,9 +172,10 @@ def main() -> int:
         if not ficha.exists():
             continue
         p = yaml.safe_load(ficha.read_text(encoding="utf-8")) or {}
+        slug = carpeta.name
+        FICHAS.append((slug, p))
         if p.get("publicar", True) is False:
             continue
-        slug = carpeta.name
         destino = SALIDA / "p" / slug
         destino.mkdir(parents=True)
 
@@ -186,6 +233,7 @@ def main() -> int:
             encoding="utf-8")
         publicados.append(slug + (f" (+{len(paginas)} páginas)" if paginas else ""))
 
+    construir_indice(env, sitio, comun)
     print(f"Portada y {len(publicados)} proyecto(s): {', '.join(publicados)}")
     return 0
 

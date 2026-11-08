@@ -12,5 +12,14 @@ ciudad: Medellín, Colombia
 
 # La portada está escrita directamente en plantillas/portada.html (copia del sitio original).
 
+# Mensaje por defecto para enviar el enlace de un proyecto (índice interno).
+# Variables: {titulo}, {url}, {plazo}, {ahora}
+mensaje: |-
+  Buenas. Le comparto el enlace del espacio de trabajo del proyecto «{titulo}»:
+  {url}
+  {ahora}{plazo}
+  Allí encuentra los documentos vigentes y la forma de enviar sus comentarios. Quedo atento.
+  Carlos Builes · Festina Lente
+
 # Fases posibles de un proyecto, en orden. Se usan en la línea de avance.
 fases: [Definición, Diseño, Ejecución, Entrega]
