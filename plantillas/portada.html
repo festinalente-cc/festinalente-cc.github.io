@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% block titulo %}{{ sitio.nombre }} · {{ sitio.lema }}{% endblock %}
+{% block cuerpo %}
+<section class="heroe">
+  <div class="contenedor">
+    <div class="sobretitulo">Agencia científica boutique</div>
+    <h1>{{ sitio.lema }}</h1>
+    <p class="lema">{{ sitio.descripcion }}</p>
+    <div class="acciones">
+      <a class="boton primario" href="#contacto">Conversemos</a>
+      <a class="boton secundario" href="#experiencia">Ver trabajo seleccionado</a>
+    </div>
+  </div>
+</section>
+
+<section class="alterna">
+  <div class="contenedor">
+    <div class="sobretitulo">Cómo trabajamos</div>
+    <h2>Acompañamiento científico continuo</h2>
+    <p class="suave" style="max-width:62ch">{{ sitio.posicionamiento }}</p>
+    <div class="rejilla tres" style="margin-top:32px">
+      {% for paso in sitio.proceso %}
+      <div class="tarjeta">
+        <div class="numero">{{ loop.index }}</div>
+        <h3>{{ paso.titulo }}</h3>
+        <p>{{ paso.texto }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="contenedor">
+    <div class="sobretitulo">Servicios</div>
+    <h2>Qué hacemos</h2>
+    <div class="rejilla tres" style="margin-top:32px">
+      {% for s in sitio.servicios %}
+      <div class="tarjeta">
+        <h3>{{ s.titulo }}</h3>
+        <p>{{ s.texto }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="alterna">
+  <div class="contenedor rejilla dos">
+    <div>
+      <div class="sobretitulo">Tecnología</div>
+      <h2>Herramientas propias, criterio humano</h2>
+      <p class="suave">{{ sitio.tecnologia }}</p>
+    </div>
+    <div>
+      <div class="sobretitulo">Evidencia del mundo real</div>
+      <h2>Datos a escala del sistema de salud</h2>
+      <p class="suave">{{ sitio.rwe }}</p>
+    </div>
+  </div>
+</section>
+
+<section id="experiencia">
+  <div class="contenedor">
+    <div class="sobretitulo">Experiencia</div>
+    <h2>Trabajo seleccionado</h2>
+    <ul class="publicaciones">
+      {% for p in sitio.publicaciones %}
+      <li><strong>{{ p.titulo }}</strong><br><span class="revista">{{ p.revista }}</span></li>
+      {% endfor %}
+    </ul>
+    <p class="suave" style="margin-top:28px;font-size:.95rem">Cada proyecto se desarrolla en cuatro etapas: {{ sitio.fases | join(', ') }}. Los equipos de trabajo y los paneles de expertos acceden a un espacio propio por proyecto.</p>
+  </div>
+</section>
+
+<section id="capacidades" class="alterna">
+  <div class="contenedor">
+    <div class="sobretitulo">Capacidades</div>
+    <h2>Un equipo pequeño con todas las piezas</h2>
+    <div class="etiquetas">
+      {% for c in sitio.capacidades %}<span class="etiqueta">{{ c }}</span>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="contenedor">
+    <div class="sobretitulo">Contacto</div>
+    <h2>Conversemos sobre su próximo proyecto</h2>
+    <p class="suave">Escríbanos y le respondemos con una propuesta de alcance en pocos días.</p>
+    <div class="acciones">
+      <a class="boton primario" href="mailto:{{ sitio.correo }}">{{ sitio.correo }}</a>
+    </div>
+    <p class="suave" style="margin-top:20px;font-size:.95rem">{{ sitio.ciudad }}</p>
+  </div>
+</section>
+{% endblock %}

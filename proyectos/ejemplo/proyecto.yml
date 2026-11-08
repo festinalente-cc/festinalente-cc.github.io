@@ -1,0 +1,66 @@
+# Ficha del proyecto. Copie esta carpeta para crear un proyecto nuevo.
+# El nombre de la carpeta es la dirección: festinalente.cc/p/<carpeta>/
+# Para que el enlace no sea adivinable, agregue un código al nombre de la
+# carpeta, por ejemplo: consenso-eot-7k3q
+
+titulo: Consenso sobre el manejo de la enfermedad ocular tiroidea
+subtitulo: Declaración de posición con método RAND/UCLA
+cliente: Sociedad científica (ejemplo)
+codigo: FL-2026-01          # opcional, referencia interna
+inicio: 2026-01            # mes de inicio
+fin_previsto: 2026-09      # mes previsto de entrega
+
+# Fase actual: Definición, Diseño, Ejecución o Entrega
+fase: Ejecución
+
+# Equipo de Festina Lente
+equipo:
+  - nombre: Carlos E. Builes-Montaño
+    rol: Dirección científica
+  - nombre: Nombre Apellido
+    rol: Metodología y bioestadística
+
+# Panel de expertos. Solo nombre, afiliación y ciudad; nunca datos de contacto.
+panelistas:
+  - nombre: Dra. Nombre Apellido
+    afiliacion: Endocrinología, Hospital X
+    ciudad: Bogotá
+  - nombre: Dr. Nombre Apellido
+    afiliacion: Oftalmología, Clínica Y
+    ciudad: Medellín
+
+# Cronograma. estado: hecho | en-curso | pendiente
+cronograma:
+  - fecha: 2026-02
+    hito: Reunión de arranque y definición de alcance
+    estado: hecho
+  - fecha: 2026-03
+    hito: Revisión sistemática de la literatura
+    estado: hecho
+  - fecha: 2026-05
+    hito: Primera ronda de calificación (RAND/UCLA)
+    estado: en-curso
+  - fecha: 2026-06
+    hito: Reunión presencial del panel
+    estado: pendiente
+  - fecha: 2026-09
+    hito: Manuscrito final
+    estado: pendiente
+
+# Documentos. Los archivos van en la subcarpeta documentos/ de este proyecto.
+documentos:
+  - archivo: instructivo-panelistas.pdf
+    titulo: Instructivo para panelistas
+    descripcion: Cómo funciona la calificación y qué esperamos de cada ronda.
+  - archivo: cronograma.pdf
+    titulo: Cronograma detallado
+
+# Novedades, de la más reciente a la más antigua.
+novedades:
+  - fecha: 2026-05-10
+    texto: Se abrió la primera ronda de calificación. Plazo para responder, 24 de mayo.
+  - fecha: 2026-03-20
+    texto: Terminó la revisión sistemática; se incluyeron 58 estudios.
+
+# Contacto del proyecto (si se omite, se usa el del sitio)
+contacto: cbuiles@festinalente.cc

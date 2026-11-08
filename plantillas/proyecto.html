@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block titulo %}{{ p.titulo }} · {{ sitio.nombre }}{% endblock %}
+{% block descripcion %}{{ p.subtitulo or p.titulo }}{% endblock %}
+{% block robots %}<meta name="robots" content="noindex, nofollow">{% endblock %}
+{% block nav %}
+  <a href="#documentos">Documentos</a>
+  <a href="#cronograma">Cronograma</a>
+  <a href="#contacto">Contacto</a>
+{% endblock %}
+{% block cuerpo %}
+<section class="proyecto-cabecera">
+  <div class="contenedor">
+    <div class="sobretitulo">Proyecto{% if p.codigo %} · {{ p.codigo }}{% endif %}</div>
+    <h1>{{ p.titulo }}</h1>
+    {% if p.subtitulo %}<p class="lema suave" style="font-size:1.15rem;max-width:60ch">{{ p.subtitulo }}</p>{% endif %}
+    <div class="meta">
+      {% if p.cliente %}<span><strong>Para:</strong> {{ p.cliente }}</span>{% endif %}
+      {% if p.inicio %}<span><strong>Inicio:</strong> {{ p.inicio | mes }}</span>{% endif %}
+      {% if p.fin_previsto %}<span><strong>Entrega prevista:</strong> {{ p.fin_previsto | mes }}</span>{% endif %}
+      <span><strong>Actualizado:</strong> {{ p.actualizado | fecha }}</span>
+    </div>
+    <div class="fases">
+      {% for f in sitio.fases %}
+      <div class="fase {% if loop.index0 < fase_idx %}hecha{% elif loop.index0 == fase_idx %}actual{% endif %}">{{ f }}</div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<div class="contenedor proyecto-cuerpo">
+  <article class="contenido">
+    {{ cuerpo | safe }}
+
+    {% if p.novedades %}
+    <h2 id="novedades">Novedades</h2>
+    <ul class="novedades">
+      {% for n in p.novedades %}
+      <li><span class="fecha">{{ n.fecha | fecha }}</span>{{ n.texto }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    {% if p.documentos %}
+    <h2 id="documentos">Documentos</h2>
+    <ul class="documentos">
+      {% for d in p.documentos %}
+      <li><a href="documentos/{{ d.archivo }}" {% if d.archivo.lower().endswith('.pdf') %}target="_blank" rel="noopener"{% endif %}>
+        <span class="icono">{{ d.archivo.rsplit('.',1)[-1] | upper }}</span>
+        <span><span class="titulo">{{ d.titulo or d.archivo }}</span>{% if d.descripcion %}<span class="desc">{{ d.descripcion }}</span>{% endif %}</span>
+      </a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    <h2 id="contacto">Contacto</h2>
+    <p>Para dudas sobre este proyecto escriba a <a href="mailto:{{ p.contacto or sitio.correo }}">{{ p.contacto or sitio.correo }}</a>.</p>
+    <p class="aviso-privado">Esta página es de uso interno del equipo y del panel de este proyecto. No está enlazada desde el sitio público ni indexada por buscadores; por favor no comparta el enlace fuera del grupo de trabajo.</p>
+  </article>
+
+  <aside class="lateral">
+    {% if p.cronograma %}
+    <div id="cronograma">
+      <h3>Cronograma</h3>
+      <ul class="cronograma">
+        {% for h in p.cronograma %}
+        <li class="{{ h.estado or 'pendiente' }}"><span class="fecha">{{ h.fecha | mes }}</span>{{ h.hito }}<span class="estado">{{ {'hecho':'Hecho','en-curso':'En curso','pendiente':'Pendiente'}[h.estado or 'pendiente'] }}</span></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+    {% if p.equipo %}
+    <div>
+      <h3>Equipo Festina Lente</h3>
+      <ul class="personas">
+        {% for m in p.equipo %}<li>{{ m.nombre }}<span class="rol">{{ m.rol }}</span></li>{% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+    {% if p.panelistas %}
+    <div>
+      <h3>Panel de expertos</h3>
+      <ul class="personas">
+        {% for m in p.panelistas %}<li>{{ m.nombre }}<span class="rol">{{ m.afiliacion }}{% if m.ciudad %} · {{ m.ciudad }}{% endif %}</span></li>{% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </aside>
+</div>
+{% endblock %}

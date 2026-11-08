@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block titulo %}{{ sitio.nombre }}{% endblock %}</title>
+<meta name="description" content="{% block descripcion %}{{ sitio.descripcion }}{% endblock %}">
+{% block robots %}{% endblock %}
+<link rel="icon" href="{{ raiz }}brand/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="{{ raiz }}estilos.css">
+</head>
+<body>
+<header class="cabecera">
+  <div class="contenedor">
+    <a class="marca" href="{{ raiz }}">
+      {% if marca_img %}<img src="{{ raiz }}brand/{{ marca_img }}" alt="{{ sitio.nombre }}">{% else %}<span class="isotipo"></span><span>{{ sitio.nombre }}</span>{% endif %}
+    </a>
+    <nav>{% block nav %}
+      <a href="{{ raiz }}#servicios">Servicios</a>
+      <a class="opcional" href="{{ raiz }}#experiencia">Experiencia</a>
+      <a class="opcional" href="{{ raiz }}#capacidades">Capacidades</a>
+      <a href="{{ raiz }}#contacto">Contacto</a>
+    {% endblock %}</nav>
+  </div>
+</header>
+
+<main>{% block cuerpo %}{% endblock %}</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <span>{{ sitio.nombre }} · {{ sitio.ciudad }}</span>
+    <span><a href="mailto:{{ sitio.correo }}">{{ sitio.correo }}</a> · {{ anio }}</span>
+  </div>
+</footer>
+</body>
+</html>
