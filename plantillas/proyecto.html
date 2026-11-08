@@ -3,13 +3,14 @@
 {% block descripcion %}{{ p.subtitulo or p.titulo }}{% endblock %}
 {% block robots %}<meta name="robots" content="noindex, nofollow">{% endblock %}
 {% block nav %}
-  <a href="#documentos">Documentos</a>
-  <a href="#cronograma">Cronograma</a>
-  <a href="#novedades">Novedades</a>
+  {% if p.versiones %}<a href="#versiones">Versiones</a>{% endif %}
+  {% if p.documentos %}<a href="#documentos">Documentos</a>{% endif %}
+  {% if p.cronograma %}<a href="#cronograma">Cronograma</a>{% endif %}
+  {% if p.novedades %}<a href="#novedades">Novedades</a>{% endif %}
   <a class="nav-contact" href="mailto:{{ p.contacto or sitio.correo }}">Contacto</a>
 {% endblock %}
 {% block pie_titulo %}¿Dudas sobre este proyecto?{% endblock %}
-{% block pie_texto %}Escríbanos y le respondemos directamente. Esta página es de uso interno del equipo y del panel; por favor no comparta el enlace fuera del grupo de trabajo.{% endblock %}
+{% block pie_texto %}Escríbanos por correo o por WhatsApp. Esta página es de uso interno del equipo y del panel; por favor no comparta el enlace fuera del grupo de trabajo.{% endblock %}
 {% block cuerpo %}
 <section class="py-hero">
   <div class="py-hero-content">
@@ -27,6 +28,22 @@
     <span>Actualizado el {{ p.actualizado | fecha }}</span>
   </div>
 </section>
+
+{% if p.ahora %}
+<section class="py-ahora" id="ahora">
+  <span class="eyebrow">Qué hacer ahora</span>
+  <div>
+    <h2>{{ p.ahora.titulo }}</h2>
+    <p>{{ p.ahora.texto }}</p>
+    {% if p.ahora.plazo %}<span class="plazo">Plazo: {{ p.ahora.plazo | fecha }}</span>{% endif %}
+    <div class="hero-actions">
+      {% if p.ahora.archivo %}<a class="hero-contact" href="documentos/{{ p.ahora.archivo }}">{{ p.ahora.boton or 'Abrir el documento' }}</a>{% endif %}
+      <a class="hero-link" href="mailto:{{ p.contacto or sitio.correo }}">Enviar comentarios por correo</a>
+      {% if sitio.whatsapp %}<a class="hero-link" href="{{ sitio.whatsapp }}" target="_blank" rel="noopener">Escribir por WhatsApp</a>{% endif %}
+    </div>
+  </div>
+</section>
+{% endif %}
 
 <section class="section py-cuerpo">
   <article class="py-contenido">
@@ -47,6 +64,21 @@
     {% endif %}
   </aside>
 </section>
+
+{% if p.versiones %}
+<section class="section py-seccion services-section" id="versiones">
+  <div class="section-title"><span class="eyebrow">Versiones</span><h2>Historia del manuscrito</h2></div>
+  <div class="service-list">
+    {% for v in p.versiones %}
+    <article class="service py-version {{ v.estado or '' }}">
+      <span>{{ v.fecha | mes }}</span>
+      <h3>{{ v.nombre }}{% if v.nota %}<span class="py-nota">{{ v.nota }}</span>{% endif %}</h3>
+      <p><em class="py-estado {{ v.estado or '' }}">{{ {'vigente':'Vigente · en valoración','superada':'Superada','final':'Final'}.get(v.estado, v.estado or '') }}</em>{% if v.archivo %}<a class="py-descargar" href="documentos/{{ v.archivo }}">Descargar {{ v.archivo.rsplit('.',1)[-1] | upper }} ↗</a>{% endif %}</p>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
 
 {% if p.cronograma %}
 <section class="section py-seccion approach" id="cronograma">

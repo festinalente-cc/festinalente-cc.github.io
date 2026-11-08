@@ -520,3 +520,19 @@ footer h2 { font-size: 2.8rem; }
 .py-404 { padding: clamp(90px, 12vw, 180px) clamp(24px, 5vw, 82px); text-align: center; }
 .py-404 h1 { letter-spacing: -0.045em; font-weight: 300; font-size: clamp(2.4rem, 4.6vw, 4.8rem); margin: 24px 0; }
 .py-404 p { color: var(--muted); max-width: 560px; margin: 0 auto 36px; }
+.footer-contact a + a { margin-top: 0; border-top: 0; }
+
+/* Bloque "qué hacer ahora" y versiones */
+.py-ahora { background: var(--white); border-bottom: 1px solid var(--line); padding: clamp(44px, 5vw, 70px) clamp(24px, 5vw, 82px); display: grid; grid-template-columns: 0.45fr 1.55fr; gap: 50px; align-items: start; }
+.py-ahora h2 { letter-spacing: -0.03em; font-weight: 300; font-size: clamp(1.7rem, 2.8vw, 2.4rem); line-height: 1.1; margin: 0 0 16px; }
+.py-ahora p { color: var(--muted); max-width: 720px; margin: 0; font-size: 1.05rem; line-height: 1.7; }
+.py-ahora .plazo { display: inline-block; margin-top: 18px; color: var(--charcoal); font-weight: 700; letter-spacing: .16em; text-transform: uppercase; font-size: .72rem; border-top: 1px solid var(--charcoal); padding-top: 10px; }
+.py-ahora .hero-actions { margin-top: 26px; }
+.py-ahora .hero-contact { background: var(--charcoal); color: var(--white); }
+.py-ahora .hero-contact:hover { background: var(--brand-grey); }
+.py-ahora .hero-link { border-bottom-color: var(--charcoal); }
+@media (max-width: 850px) { .py-ahora { grid-template-columns: 1fr; gap: 20px; } }
+.py-version .py-estado.vigente { color: var(--charcoal); }
+.py-version .py-estado.superada { color: var(--grey); }
+.py-version.superada h3 { color: var(--muted); font-weight: 500; }
+.py-version .py-nota { display: block; color: var(--muted); font-size: .9rem; margin-top: 6px; }

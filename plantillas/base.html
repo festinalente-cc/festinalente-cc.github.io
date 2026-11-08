@@ -33,7 +33,7 @@
 <footer>
   <div class="footer-brand"><img src="{{ raiz }}brand/wordmark-light.png" alt="Festina Lente Consulting"></div>
   <div><span class="eyebrow light">Contacto</span><h2>{% block pie_titulo %}Conversemos sobre su próximo proyecto{% endblock %}</h2></div>
-  <div class="footer-contact"><p>{% block pie_texto %}Cuéntenos la pregunta, quién utilizará el resultado y el producto que necesita.{% endblock %}</p><a href="mailto:{{ correo_pie or sitio.correo }}">{{ correo_pie or sitio.correo }}</a></div>
+  <div class="footer-contact"><p>{% block pie_texto %}Cuéntenos la pregunta, quién utilizará el resultado y el producto que necesita.{% endblock %}</p><a href="mailto:{{ correo_pie or sitio.correo }}">{{ correo_pie or sitio.correo }}</a>{% if sitio.whatsapp %}<a href="{{ sitio.whatsapp }}" target="_blank" rel="noopener">WhatsApp {{ sitio.whatsapp_usuario }}</a>{% endif %}</div>
   <div class="footer-bottom"><span>{{ sitio.ciudad }}</span><span>{{ anio }}</span></div>
 </footer>
 </main>

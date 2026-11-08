@@ -1,3 +1,5 @@
+publicar: false   # plantilla: no se publica
+
 # Ficha del proyecto. Copie esta carpeta para crear un proyecto nuevo.
 # El nombre de la carpeta es la dirección: festinalente.cc/p/<carpeta>/
 # Para que el enlace no sea adivinable, agregue un código al nombre de la

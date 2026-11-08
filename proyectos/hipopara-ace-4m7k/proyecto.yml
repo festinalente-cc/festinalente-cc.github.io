@@ -1,0 +1,97 @@
+titulo: "Hipoparatiroidismo crónico: mal control y candidatura a reemplazo con PTH"
+subtitulo: Declaración de posición de la ACE desarrollada con el método RAND/UCLA
+cliente: Asociación Colombiana de Endocrinología, Diabetes y Metabolismo (ACE)
+inicio: 2026
+fase: Ejecución
+contacto: cbuiles@festinalente.cc
+
+# Bloque destacado al inicio de la página
+ahora:
+  titulo: La revisión 1 del manuscrito está lista para su valoración
+  texto: >-
+    Incorpora los 43 comentarios del panel al borrador 1. Antes de abrir el
+    documento, lea el resumen del cambio principal más abajo y la matriz de
+    respuesta a los comentarios. Envíe sus observaciones por correo o por
+    WhatsApp, o directamente como comentarios en el archivo de Word.
+  plazo:            # fecha límite, p. ej. 2026-11-21 (dejar vacío si no hay)
+  archivo: hipoparatiroidismo-ACE-revision1-2026-11-07.docx
+  boton: Abrir la revisión 1 (Word)
+
+versiones:
+  - nombre: Revisión 1
+    fecha: 2026-11-07
+    estado: vigente
+    archivo: hipoparatiroidismo-ACE-revision1-2026-11-07.docx
+    nota: Incorpora los comentarios del panel al borrador 1. Pendiente de aprobación del panel.
+  - nombre: Borrador 1
+    fecha: 2026-10
+    estado: superada
+    archivo: hipoparatiroidismo-ACE-borrador1.docx
+    nota: Primera versión completa, revisada por el panel (43 comentarios).
+
+documentos:
+  - archivo: respuesta-comentarios-panel-revision1.pdf
+    titulo: Respuesta a los comentarios del panel (revisión 1)
+    descripcion: Matriz con cada comentario, la respuesta del equipo coordinador y el cambio hecho en el manuscrito.
+  - archivo: hipoparatiroidismo-ACE-revision1-2026-11-07.docx
+    titulo: Manuscrito, revisión 1 (7 de noviembre de 2026)
+    descripcion: Versión vigente, en inglés, para valoración del panel.
+  - archivo: hipoparatiroidismo-ACE-borrador1.docx
+    titulo: Manuscrito, borrador 1
+    descripcion: Versión anterior, solo para consulta.
+
+equipo:
+  - nombre: Carlos E. Builes-Montaño
+    rol: Coordinación científica · Hospital Pablo Tobón Uribe y Universidad de Antioquia, Medellín
+  - nombre: Natalia A. Rojas-Henao
+    rol: Equipo coordinador · Universidad de Antioquia, Medellín
+
+panelistas:
+  - nombre: Luis Felipe Fierro-Maya
+    afiliacion: Unidad de Endocrinología Oncológica, Instituto Nacional de Cancerología
+    ciudad: Bogotá
+  - nombre: Natalia Aristizábal-Henao
+    afiliacion: Clínica Universitaria Bolivariana · Universidad Pontificia Bolivariana
+    ciudad: Medellín
+  - nombre: Andrés Felipe García-Ramos
+    afiliacion: Universidad del Valle · Hospital Universitario del Valle
+    ciudad: Cali
+  - nombre: Andrey Moreno-Torres
+    afiliacion: Instituto Nacional de Cancerología · Clínica del Country
+    ciudad: Bogotá
+  - nombre: Paula Andrea Granda-Carvajal
+    afiliacion: Servicios de Salud IPS Suramericana
+    ciudad: Medellín
+  - nombre: Carolina Jaramillo-Arango
+    afiliacion: Hospital Pablo Tobón Uribe
+    ciudad: Medellín
+
+cronograma:
+  - fecha: 2026
+    hito: Revisión sistemática focalizada (164 reportes) y redacción de los enunciados
+    estado: hecho
+  - fecha: 2026
+    hito: Ronda 1 de calificación independiente (29 enunciados)
+    estado: hecho
+  - fecha: 2026
+    hito: Reunión presencial del panel y ronda 2 (32 enunciados)
+    estado: hecho
+  - fecha: 2026-10
+    hito: Borrador 1 del manuscrito y revisión por el panel
+    estado: hecho
+  - fecha: 2026-11
+    hito: Revisión 1 en valoración por el panel
+    estado: en-curso
+  - fecha: 2026-11
+    hito: Aprobación del panel
+    estado: pendiente
+  - fecha: 2026-12
+    hito: Comentarios cualitativos de los socios de la ACE
+    estado: pendiente
+  - fecha: 2027
+    hito: Versión final y envío a la revista
+    estado: pendiente
+
+novedades:
+  - fecha: 2026-11-07
+    texto: Se publica la revisión 1 del manuscrito con la matriz de respuesta a los 43 comentarios del panel.
