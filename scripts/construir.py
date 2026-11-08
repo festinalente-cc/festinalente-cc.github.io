@@ -78,7 +78,7 @@ def main() -> int:
 
     # Logo: si existe estaticos/brand/wordmark.svg o .png se usa en la cabecera.
     marca_img = None
-    for nombre in ("wordmark.svg", "wordmark.png", "wordmark-dark.png"):
+    for nombre in ("wordmark-dark.png",):
         if (ESTATICOS / "brand" / nombre).exists():
             marca_img = nombre
             break

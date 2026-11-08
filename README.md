@@ -2,9 +2,9 @@
 
 Sitio estático publicado con GitHub Pages en <https://festinalente-cc.github.io> (y, cuando se conecte el dominio, en <https://festinalente.cc>).
 
-- **Portada:** textos en `sitio.yml`; diseño en `plantillas/portada.html` y `plantillas/estilos.css`.
+- **Portada:** copia fiel del sitio original de festinalente.cc. El contenido está en `plantillas/portada.html`; los estilos originales en `plantillas/estilos.css` (los de los micrositios van al final, con prefijo `py-`). Datos comunes (correo, ciudad, fases) en `sitio.yml`.
 - **Proyectos:** una carpeta por proyecto en `proyectos/`, publicada en `/p/<carpeta>/`. No se enlazan desde la portada ni se indexan: solo llega quien tenga el enlace.
-- **Logo:** poner `wordmark.svg` (o `.png`) en `estaticos/brand/` y aparecerá en la cabecera.
+- **Marca:** en `estaticos/brand/` están el isotipo (PNG 1200 px y `isotipo-vector.svg` extraído del manual), los wordmarks claro y oscuro y el fondo del encabezado. Las portadas de las publicaciones van en `estaticos/work/`.
 
 ## Crear un proyecto
 

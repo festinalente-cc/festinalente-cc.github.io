@@ -1,13 +1,11 @@
 {% extends "base.html" %}
-{% block titulo %}Página no encontrada · {{ sitio.nombre }}{% endblock %}
+{% block titulo %}Página no encontrada | {{ sitio.nombre }}{% endblock %}
 {% block robots %}<meta name="robots" content="noindex">{% endblock %}
 {% block cuerpo %}
-<section class="centrado">
-  <div class="contenedor">
-    <div class="sobretitulo">Error 404</div>
-    <h1>No encontramos esa página</h1>
-    <p class="suave">Si llegó aquí desde el enlace de un proyecto, revise que esté completo o escríbanos a <a href="mailto:{{ sitio.correo }}">{{ sitio.correo }}</a>.</p>
-    <div class="acciones" style="justify-content:center"><a class="boton secundario" href="/">Ir al inicio</a></div>
-  </div>
+<section class="py-404">
+  <span class="eyebrow">Error 404</span>
+  <h1>No encontramos esa página</h1>
+  <p>Si llegó aquí desde el enlace de un proyecto, revise que esté completo o escríbanos a <a href="mailto:{{ sitio.correo }}">{{ sitio.correo }}</a>.</p>
+  <a class="hero-link" href="/">Ir al inicio</a>
 </section>
 {% endblock %}

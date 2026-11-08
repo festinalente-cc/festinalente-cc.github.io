@@ -1,89 +1,91 @@
 {% extends "base.html" %}
-{% block titulo %}{{ p.titulo }} · {{ sitio.nombre }}{% endblock %}
+{% block titulo %}{{ p.titulo }} | {{ sitio.nombre }}{% endblock %}
 {% block descripcion %}{{ p.subtitulo or p.titulo }}{% endblock %}
 {% block robots %}<meta name="robots" content="noindex, nofollow">{% endblock %}
 {% block nav %}
   <a href="#documentos">Documentos</a>
   <a href="#cronograma">Cronograma</a>
-  <a href="#contacto">Contacto</a>
+  <a href="#novedades">Novedades</a>
+  <a class="nav-contact" href="mailto:{{ p.contacto or sitio.correo }}">Contacto</a>
 {% endblock %}
+{% block pie_titulo %}¿Dudas sobre este proyecto?{% endblock %}
+{% block pie_texto %}Escríbanos y le respondemos directamente. Esta página es de uso interno del equipo y del panel; por favor no comparta el enlace fuera del grupo de trabajo.{% endblock %}
 {% block cuerpo %}
-<section class="proyecto-cabecera">
-  <div class="contenedor">
-    <div class="sobretitulo">Proyecto{% if p.codigo %} · {{ p.codigo }}{% endif %}</div>
+<section class="py-hero">
+  <div class="py-hero-content">
+    <span class="eyebrow light">Proyecto{% if p.codigo %} · {{ p.codigo }}{% endif %}{% if p.cliente %} · {{ p.cliente }}{% endif %}</span>
     <h1>{{ p.titulo }}</h1>
-    {% if p.subtitulo %}<p class="lema suave" style="font-size:1.15rem;max-width:60ch">{{ p.subtitulo }}</p>{% endif %}
-    <div class="meta">
-      {% if p.cliente %}<span><strong>Para:</strong> {{ p.cliente }}</span>{% endif %}
-      {% if p.inicio %}<span><strong>Inicio:</strong> {{ p.inicio | mes }}</span>{% endif %}
-      {% if p.fin_previsto %}<span><strong>Entrega prevista:</strong> {{ p.fin_previsto | mes }}</span>{% endif %}
-      <span><strong>Actualizado:</strong> {{ p.actualizado | fecha }}</span>
-    </div>
-    <div class="fases">
-      {% for f in sitio.fases %}
-      <div class="fase {% if loop.index0 < fase_idx %}hecha{% elif loop.index0 == fase_idx %}actual{% endif %}">{{ f }}</div>
-      {% endfor %}
-    </div>
+    {% if p.subtitulo %}<p>{{ p.subtitulo }}</p>{% endif %}
+  </div>
+  <div class="py-fases">
+    {% for f in sitio.fases %}
+    <div class="py-fase {% if loop.index0 < fase_idx %}hecha{% elif loop.index0 == fase_idx %}actual{% endif %}"><span>0{{ loop.index }}</span>{{ f }}</div>
+    {% endfor %}
+  </div>
+  <div class="hero-note">
+    <strong>{% if p.inicio %}Inicio {{ p.inicio | mes }}{% endif %}{% if p.fin_previsto %} · Entrega prevista {{ p.fin_previsto | mes }}{% endif %}</strong>
+    <span>Actualizado el {{ p.actualizado | fecha }}</span>
   </div>
 </section>
 
-<div class="contenedor proyecto-cuerpo">
-  <article class="contenido">
+<section class="section py-cuerpo">
+  <article class="py-contenido">
     {{ cuerpo | safe }}
-
-    {% if p.novedades %}
-    <h2 id="novedades">Novedades</h2>
-    <ul class="novedades">
-      {% for n in p.novedades %}
-      <li><span class="fecha">{{ n.fecha | fecha }}</span>{{ n.texto }}</li>
-      {% endfor %}
-    </ul>
-    {% endif %}
-
-    {% if p.documentos %}
-    <h2 id="documentos">Documentos</h2>
-    <ul class="documentos">
-      {% for d in p.documentos %}
-      <li><a href="documentos/{{ d.archivo }}" {% if d.archivo.lower().endswith('.pdf') %}target="_blank" rel="noopener"{% endif %}>
-        <span class="icono">{{ d.archivo.rsplit('.',1)[-1] | upper }}</span>
-        <span><span class="titulo">{{ d.titulo or d.archivo }}</span>{% if d.descripcion %}<span class="desc">{{ d.descripcion }}</span>{% endif %}</span>
-      </a></li>
-      {% endfor %}
-    </ul>
-    {% endif %}
-
-    <h2 id="contacto">Contacto</h2>
-    <p>Para dudas sobre este proyecto escriba a <a href="mailto:{{ p.contacto or sitio.correo }}">{{ p.contacto or sitio.correo }}</a>.</p>
-    <p class="aviso-privado">Esta página es de uso interno del equipo y del panel de este proyecto. No está enlazada desde el sitio público ni indexada por buscadores; por favor no comparta el enlace fuera del grupo de trabajo.</p>
   </article>
-
-  <aside class="lateral">
-    {% if p.cronograma %}
-    <div id="cronograma">
-      <h3>Cronograma</h3>
-      <ul class="cronograma">
-        {% for h in p.cronograma %}
-        <li class="{{ h.estado or 'pendiente' }}"><span class="fecha">{{ h.fecha | mes }}</span>{{ h.hito }}<span class="estado">{{ {'hecho':'Hecho','en-curso':'En curso','pendiente':'Pendiente'}[h.estado or 'pendiente'] }}</span></li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% endif %}
+  <aside class="py-lateral">
     {% if p.equipo %}
-    <div>
-      <h3>Equipo Festina Lente</h3>
-      <ul class="personas">
-        {% for m in p.equipo %}<li>{{ m.nombre }}<span class="rol">{{ m.rol }}</span></li>{% endfor %}
-      </ul>
+    <div class="py-bloque">
+      <span class="eyebrow">Equipo Festina Lente</span>
+      <ul class="py-personas">{% for m in p.equipo %}<li><strong>{{ m.nombre }}</strong><span>{{ m.rol }}</span></li>{% endfor %}</ul>
     </div>
     {% endif %}
     {% if p.panelistas %}
-    <div>
-      <h3>Panel de expertos</h3>
-      <ul class="personas">
-        {% for m in p.panelistas %}<li>{{ m.nombre }}<span class="rol">{{ m.afiliacion }}{% if m.ciudad %} · {{ m.ciudad }}{% endif %}</span></li>{% endfor %}
-      </ul>
+    <div class="py-bloque">
+      <span class="eyebrow">Panel de expertos</span>
+      <ul class="py-personas">{% for m in p.panelistas %}<li><strong>{{ m.nombre }}</strong><span>{{ m.afiliacion }}{% if m.ciudad %} · {{ m.ciudad }}{% endif %}</span></li>{% endfor %}</ul>
     </div>
     {% endif %}
   </aside>
-</div>
+</section>
+
+{% if p.cronograma %}
+<section class="section py-seccion approach" id="cronograma">
+  <div class="section-title"><span class="eyebrow">Cronograma</span><h2>Hitos del proyecto</h2></div>
+  <div class="service-list">
+    {% for h in p.cronograma %}
+    <article class="service py-hito {{ h.estado or 'pendiente' }}">
+      <span>{{ h.fecha | mes }}</span>
+      <h3>{{ h.hito }}</h3>
+      <p><em class="py-estado">{{ {'hecho':'Hecho','en-curso':'En curso','pendiente':'Pendiente'}[h.estado or 'pendiente'] }}</em></p>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if p.documentos %}
+<section class="section py-seccion services-section" id="documentos">
+  <div class="section-title"><span class="eyebrow">Documentos</span><h2>Material del proyecto</h2></div>
+  <div class="service-list">
+    {% for d in p.documentos %}
+    <a class="service py-doc" href="documentos/{{ d.archivo }}" {% if d.archivo.lower().endswith('.pdf') %}target="_blank" rel="noopener"{% endif %}>
+      <span>{{ d.archivo.rsplit('.',1)[-1] | upper }}</span>
+      <h3>{{ d.titulo or d.archivo }}</h3>
+      <p>{{ d.descripcion or '' }}<em class="py-descargar">Abrir ↗</em></p>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if p.novedades %}
+<section class="section py-seccion" id="novedades">
+  <div class="section-title"><span class="eyebrow">Novedades</span><h2>Avances recientes</h2></div>
+  <div class="service-list">
+    {% for n in p.novedades %}
+    <article class="service"><span>{{ n.fecha | fecha }}</span><h3 class="py-novedad">{{ n.texto }}</h3><p></p></article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
 {% endblock %}

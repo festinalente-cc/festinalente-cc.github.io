@@ -3,38 +3,39 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{% block titulo %}{{ sitio.nombre }}{% endblock %}</title>
+<title>{% block titulo %}{{ sitio.nombre }} | {{ sitio.lema }}{% endblock %}</title>
 <meta name="description" content="{% block descripcion %}{{ sitio.descripcion }}{% endblock %}">
-{% block robots %}{% endblock %}
-<link rel="icon" href="{{ raiz }}brand/favicon.svg" type="image/svg+xml">
+{% block robots %}<meta name="robots" content="index, follow">{% endblock %}
+<meta property="og:title" content="{{ self.titulo() }}">
+<meta property="og:site_name" content="{{ sitio.nombre }}">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CO">
+<link rel="icon" href="{{ raiz }}brand/isotipo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ raiz }}estilos.css">
 </head>
-<body>
-<header class="cabecera">
-  <div class="contenedor">
-    <a class="marca" href="{{ raiz }}">
-      <img src="{{ raiz }}brand/isotipo.svg" alt="">
-      <span class="marca-texto"><span class="nombre">Festina · Lente</span><span class="sub">Consulting</span></span>
-    </a>
-    <nav>{% block nav %}
-      <a href="{{ raiz }}#servicios">Servicios</a>
-      <a class="opcional" href="{{ raiz }}#experiencia">Experiencia</a>
-      <a class="opcional" href="{{ raiz }}#capacidades">Capacidades</a>
-      <a href="{{ raiz }}#contacto">Contacto</a>
-    {% endblock %}</nav>
-  </div>
+<body class="antialiased">
+<main>
+<header class="site-header">
+  <a class="brand" href="{{ raiz }}" aria-label="Festina Lente, inicio"><img class="brand-wordmark" src="{{ raiz }}brand/wordmark-dark.png" alt="Festina Lente Consulting"></a>
+  <nav aria-label="Navegación principal">{% block nav %}
+    <a href="{{ raiz }}#servicios">Servicios</a>
+    <a href="{{ raiz }}#trabajo">Experiencia</a>
+    <a href="{{ raiz }}#capacidades">Capacidades</a>
+    <a class="nav-contact" href="mailto:{{ sitio.correo }}">Contacto</a>
+  {% endblock %}</nav>
 </header>
 
-<main>{% block cuerpo %}{% endblock %}</main>
+{% block cuerpo %}{% endblock %}
 
-<footer class="pie">
-  <div class="contenedor">
-    <span>{{ sitio.nombre }} · {{ sitio.ciudad }}</span>
-    <span><a href="mailto:{{ sitio.correo }}">{{ sitio.correo }}</a> · {{ anio }}</span>
-  </div>
+<footer>
+  <div class="footer-brand"><img src="{{ raiz }}brand/wordmark-light.png" alt="Festina Lente Consulting"></div>
+  <div><span class="eyebrow light">Contacto</span><h2>{% block pie_titulo %}Conversemos sobre su próximo proyecto{% endblock %}</h2></div>
+  <div class="footer-contact"><p>{% block pie_texto %}Cuéntenos la pregunta, quién utilizará el resultado y el producto que necesita.{% endblock %}</p><a href="mailto:{{ correo_pie or sitio.correo }}">{{ correo_pie or sitio.correo }}</a></div>
+  <div class="footer-bottom"><span>{{ sitio.ciudad }}</span><span>{{ anio }}</span></div>
 </footer>
+</main>
 </body>
 </html>

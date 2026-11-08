@@ -1,68 +1,14 @@
 # Datos generales del sitio. Se usan en la portada y en los micrositios.
 nombre: Festina Lente
-lema: Ciencia aplicada a decisiones en salud
+lema: Servicios científicos y metodológicos
 descripcion: >-
-  Agencia científica boutique. Diseñamos y ejecutamos proyectos de
-  investigación, consensos y productos científicos para instituciones,
-  sociedades médicas y organizaciones del sector salud.
+  Investigación clínica, síntesis de evidencia, consensos, bioestadística,
+  registros y comunicación científica en salud.
 url: https://festinalente.cc
 correo: cbuiles@festinalente.cc
 ciudad: Medellín, Colombia
 
-# Portada --------------------------------------------------------------
-posicionamiento: >-
-  Atendemos un número limitado de proyectos a la vez, con dedicación directa
-  del equipo científico en cada decisión metodológica.
-
-proceso:
-  - titulo: Dar forma a la pregunta
-    texto: Aclaramos la idea, el alcance y el tipo de proyecto viable antes de comprometer recursos.
-  - titulo: Diseñar y ejecutar
-    texto: Definimos el método y resolvemos las decisiones científicas que surgen durante el trabajo.
-  - titulo: Convertir resultados en productos
-    texto: Publicaciones, consensos, conceptos técnicos, herramientas o estrategias de comunicación.
-
-servicios:
-  - titulo: Conceptos técnicos y científicos
-    texto: Sobre medicamentos, dispositivos, pruebas diagnósticas y normatividad.
-  - titulo: Consensos y declaraciones de posición
-    texto: Con métodos RAND/UCLA, Delphi y grupo nominal, de la convocatoria a la publicación.
-  - titulo: Investigación clínica, registros y RWE
-    texto: Estudios observacionales, registros y evidencia del mundo real con datos de más de cinco millones de afiliados.
-  - titulo: Bioestadística y modelamiento
-    texto: Análisis longitudinales, jerárquicos y bayesianos; modelos para apoyar decisiones.
-  - titulo: Juntas consultivas e investigación estratégica
-    texto: Diseño, moderación y síntesis de advisory boards y estudios estratégicos.
-  - titulo: Comunicación científica y desarrollos tecnológicos
-    texto: Escritura científica, materiales de divulgación y herramientas apoyadas en inteligencia artificial.
-
-capacidades:
-  - Dirección científica
-  - Epidemiología y metodología
-  - Bioestadística y ciencia de datos
-  - Gestión de proyectos
-  - Escritura científica
-  - Tecnología y automatización
-
-tecnologia: >-
-  Usamos herramientas internas apoyadas en inteligencia artificial para búsqueda,
-  extracción, control de calidad y generación de productos. El juicio metodológico
-  y la validación siguen siendo responsabilidad del equipo científico.
-
-rwe: >-
-  Una alianza estratégica nos da acceso a datos clínicos y administrativos de más de
-  cinco millones de afiliados al sistema de salud colombiano. La viabilidad de cada
-  estudio depende de las aprobaciones éticas, la gobernanza y la protección de datos.
-
-publicaciones:
-  - titulo: Equivalencia clínica de semaglutida y tirzepatida por dosis
-    revista: Diabetes Therapy, 2026
-  - titulo: Tratamientos farmacológicos para la enfermedad ocular tiroidea activa. Revisión sistemática de 58 estudios
-    revista: 2026
-  - titulo: Recomendaciones para el manejo médico de la enfermedad ocular tiroidea (método RAND/UCLA)
-    revista: ENCR, 2026
-  - titulo: Diabetes tipo 2 e incontinencia urinaria. Revisión de alcance y declaración de posición
-    revista: ENCR, 2025
+# La portada está escrita directamente en plantillas/portada.html (copia del sitio original).
 
 # Fases posibles de un proyecto, en orden. Se usan en la línea de avance.
 fases: [Definición, Diseño, Ejecución, Entrega]
