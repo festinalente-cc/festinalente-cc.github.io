@@ -2,7 +2,7 @@
 
 Un conjunto de **estándares de cuidado**: enunciados verificables de lo que debe ocurrir en la atención de adultos con enfermedad ocular tiroidea (EOT) en Colombia. Cada estándar indica la actuación, la población, el ámbito de atención, el responsable cuando corresponda y sus condiciones o excepciones. Solo se convertirán en estándares las afirmaciones que el panel califique como apropiadas en la ronda 2.
 
-**No es una guía de práctica clínica.** Los estándares se apoyan en una revisión sistemática con evaluación crítica de las fuentes y en el juicio formal del panel con el método de apropiación RAND/UCLA. La certeza de la evidencia se califica con GRADE de forma global por bloque, no por desenlace; cuando una guía fuente informa su fuerza o nivel de evidencia, la ficha lo reporta tal como fue publicado.
+**No es una guía de práctica clínica.** Los estándares se apoyan en una revisión sistemática con evaluación crítica de las fuentes y en el juicio formal del panel con el método de apropiación RAND/UCLA. No se califica la certeza de la evidencia por desenlace con GRADE; la confiabilidad se expresa con la evaluación crítica de cada fuente. Cuando una guía fuente informa su fuerza o nivel de evidencia, la ficha lo reporta tal como fue publicado.
 
 **Alcance.** Población: personas de 18 años o más con riesgo, sospecha o diagnóstico de EOT, en cualquier grado de actividad y severidad, incluidas las secuelas. Ámbito: la EOT se considera una enfermedad de manejo especializado (endocrinología y oftalmología); se incluyen las actuaciones que corresponden a atención primaria: sospecha y examen ocular básico en el hipertiroidismo, reconocimiento de amenaza visual, remisión con criterios, consejo antitabaco y mantenimiento del eutiroidismo. Panel y equipo asistencial son distintos: la composición de este panel no predetermina la del equipo de atención que se defina en la pregunta P19.
 
@@ -70,7 +70,7 @@ Las calificaciones son anónimas para el grupo. Solo la secretaría técnica con
 
 - La evidencia proviene de 234 publicaciones en inglés o español, seleccionadas entre 3081 registros de PubMed y Embase.
 - La extracción y la evaluación crítica se hicieron con modelos de lenguaje y controles automáticos: cifras contrastadas con la cita, verificación por un segundo modelo y adjudicación de desacuerdos por un tercero. Antes de apoyarse en una cifra clave, consulte su cita en el anexo técnico.
-- La certeza de la evidencia no se calificó con GRADE por desenlace, sino de forma global por bloque de evidencia, como se presenta en cada ficha.
+- No se calificó la certeza GRADE por desenlace; la confiabilidad se expresa con la evaluación crítica de cada fuente (AGREE II, AMSTAR 2 o ROBIS, JBI, criterios de transparencia).
 - Los datos colombianos son escasos; la mayoría de la evidencia procede de Europa, Norteamérica y Asia.
 - Las preguntas P15 (continuidad) y P18 (calidad asistencial) tienen poca evidencia; su contenido dependerá más del juicio del panel.
 - En P12, las afirmaciones 7 a 10 sobre vigilancia de seguridad por fármaco fueron añadidas por el equipo; sus frecuencias provienen de la práctica y de las fichas técnicas, no de las fichas de evidencia, salvo donde se cita una fuente.
