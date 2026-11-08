@@ -1,18 +1,14 @@
-{% extends "base.html" %}
-{% block titulo %}Proyectos | {{ sitio.nombre }}{% endblock %}
-{% block robots %}<meta name="robots" content="noindex, nofollow">{% endblock %}
-{% block nav %}
-  <a href="{{ sitio.url }}">Sitio principal</a>
-  <a class="nav-contact" href="mailto:{{ sitio.correo }}">Contacto</a>
-{% endblock %}
-{% block cuerpo %}
-<section class="py-hero">
-  <div class="py-hero-content">
-    <span class="eyebrow light">Espacio de trabajo</span>
-    <h1>Proyectos de Festina Lente</h1>
-    <p>Cada proyecto tiene una página propia para su equipo y su panel de expertos. Si forma parte de uno, use el enlace que recibió por correo o por WhatsApp.</p>
-    <div class="hero-actions"><a class="hero-contact" href="{{ sitio.url }}">Ir a festinalente.cc</a><a class="hero-link" href="{{ sitio.whatsapp }}" target="_blank" rel="noopener">Solicitar el enlace por WhatsApp</a></div>
-  </div>
-  <div class="hero-note"><strong>Festina lente</strong><span>Diligencia y prudencia en cada decisión metodológica.</span></div>
-</section>
-{% endblock %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="refresh" content="0; url={{ sitio.url }}">
+<link rel="canonical" href="{{ sitio.url }}">
+<title>{{ sitio.nombre }}</title>
+<script>location.replace("{{ sitio.url }}");</script>
+</head>
+<body>
+<p>Redirigiendo a <a href="{{ sitio.url }}">{{ sitio.url }}</a>…</p>
+</body>
+</html>
