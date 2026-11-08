@@ -2,7 +2,8 @@
 {% block titulo %}{{ sitio.nombre }} · {{ sitio.lema }}{% endblock %}
 {% block cuerpo %}
 <section class="heroe">
-  <div class="contenedor">
+  <div class="contenedor heroe-rejilla">
+   <div>
     <div class="sobretitulo">Agencia científica boutique</div>
     <h1>{{ sitio.lema }}</h1>
     <p class="lema">{{ sitio.descripcion }}</p>
@@ -10,6 +11,8 @@
       <a class="boton primario" href="#contacto">Conversemos</a>
       <a class="boton secundario" href="#experiencia">Ver trabajo seleccionado</a>
     </div>
+   </div>
+   <img class="heroe-logo" src="{{ raiz }}brand/logotipo.png" alt="Festina Lente Consulting" width="1200" height="1200">
   </div>
 </section>
 

@@ -7,13 +7,17 @@
 <meta name="description" content="{% block descripcion %}{{ sitio.descripcion }}{% endblock %}">
 {% block robots %}{% endblock %}
 <link rel="icon" href="{{ raiz }}brand/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ raiz }}estilos.css">
 </head>
 <body>
 <header class="cabecera">
   <div class="contenedor">
     <a class="marca" href="{{ raiz }}">
-      {% if marca_img %}<img src="{{ raiz }}brand/{{ marca_img }}" alt="{{ sitio.nombre }}">{% else %}<span class="isotipo"></span><span>{{ sitio.nombre }}</span>{% endif %}
+      <img src="{{ raiz }}brand/isotipo.svg" alt="">
+      <span class="marca-texto"><span class="nombre">Festina · Lente</span><span class="sub">Consulting</span></span>
     </a>
     <nav>{% block nav %}
       <a href="{{ raiz }}#servicios">Servicios</a>
