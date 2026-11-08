@@ -462,13 +462,16 @@ footer h2 { font-size: 2.8rem; }
   50% { opacity: 0.5; }
 }
 /* ---------- Micrositios de proyectos (añadido; usa las variables del sitio) ---------- */
-.py-hero { background: var(--charcoal); color: var(--white); padding: clamp(70px, 8vw, 120px) clamp(24px, 5vw, 82px) 0; position: relative; isolation: isolate; overflow: hidden; }
+.py-hero { background: var(--charcoal); color: var(--white); padding: clamp(70px, 8vw, 120px) clamp(24px, 5vw, 82px) 0; display: flex; flex-direction: column; gap: 48px; }
+.py-hero .hero-actions { margin-top: 36px; }
+.py-hero-content + .hero-note { margin-top: 0; }
+.py-hero-x { position: relative; isolation: isolate; overflow: hidden; }
 .py-hero::before { content: ""; z-index: -2; filter: grayscale() blur(2px); background: url("/brand/hero-background-v2.jpg") 52% center / cover no-repeat; position: absolute; inset: -8px; transform: scale(1.018); }
 .py-hero::after { content: ""; z-index: -1; background: linear-gradient(90deg, rgba(20,20,22,.97) 0%, rgba(20,20,22,.94) 50%, rgba(20,20,22,.8) 100%); position: absolute; inset: 0; }
 .py-hero-content { max-width: 980px; }
 .py-hero h1 { letter-spacing: -0.045em; margin: 28px 0 26px; font-size: clamp(2.4rem, 4.6vw, 4.8rem); font-weight: 300; line-height: 1.02; }
 .py-hero-content > p { color: rgb(222,222,222); max-width: 700px; font-size: clamp(1rem, 1.3vw, 1.18rem); line-height: 1.7; }
-.py-fases { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 54px; }
+.py-fases { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
 .py-fase { border-top: 1px solid rgba(255,255,255,.28); padding: 16px 0 24px; color: rgba(255,255,255,.55); font-size: .95rem; font-weight: 500; }
 .py-fase span { display: block; letter-spacing: .16em; font-size: .68rem; font-weight: 700; margin-bottom: 8px; }
 .py-fase.hecha { border-top-color: rgba(255,255,255,.75); color: rgba(255,255,255,.85); }

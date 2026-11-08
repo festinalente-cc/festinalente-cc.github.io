@@ -1,10 +1,10 @@
 # Sitio de Festina Lente
 
-Sitio estático publicado con GitHub Pages en <https://festinalente-cc.github.io> (y, cuando se conecte el dominio, en <https://festinalente.cc>).
+Espacio de proyectos de Festina Lente, publicado con GitHub Pages en <https://festinalente-cc.github.io>. El sitio público sigue siendo <https://festinalente.cc> (ChatGPT Sites); este repositorio solo aloja los micrositios de proyectos, con el mismo diseño.
 
-- **Portada:** copia fiel del sitio original de festinalente.cc. El contenido está en `plantillas/portada.html`; los estilos originales en `plantillas/estilos.css` (los de los micrositios van al final, con prefijo `py-`). Datos comunes (correo, ciudad, fases) en `sitio.yml`.
+- **Portada:** página mínima que remite a festinalente.cc (`plantillas/portada.html`). Los estilos son los del sitio público (`plantillas/estilos.css`; los de los micrositios van al final, con prefijo `py-`). Datos comunes (correo, ciudad, fases) en `sitio.yml`.
 - **Proyectos:** una carpeta por proyecto en `proyectos/`, publicada en `/p/<carpeta>/`. No se enlazan desde la portada ni se indexan: solo llega quien tenga el enlace.
-- **Marca:** en `estaticos/brand/` están el isotipo (PNG 1200 px y `isotipo-vector.svg` extraído del manual), los wordmarks claro y oscuro y el fondo del encabezado. Las portadas de las publicaciones van en `estaticos/work/`.
+- **Marca:** en `estaticos/brand/` están el isotipo (PNG 1200 px y `isotipo-vector.svg` extraído del manual), los wordmarks claro y oscuro y el fondo del encabezado.
 
 ## Crear un proyecto
 

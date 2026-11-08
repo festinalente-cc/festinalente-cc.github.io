@@ -1,138 +1,18 @@
 {% extends "base.html" %}
+{% block titulo %}Proyectos | {{ sitio.nombre }}{% endblock %}
+{% block robots %}<meta name="robots" content="noindex, nofollow">{% endblock %}
+{% block nav %}
+  <a href="{{ sitio.url }}">Sitio principal</a>
+  <a class="nav-contact" href="mailto:{{ sitio.correo }}">Contacto</a>
+{% endblock %}
 {% block cuerpo %}
-<section class="hero" id="inicio">
-  <div class="hero-content">
-    <span class="eyebrow light">Servicios científicos y metodológicos</span>
-    <h1>Ciencia aplicada a decisiones en salud</h1>
-    <p>Somos una agencia científica boutique. Ayudamos a convertir preguntas e ideas en proyectos sólidos y en productos útiles para instituciones, sociedades médicas y organizaciones del sector salud.</p>
-    <div class="hero-actions"><a class="hero-link" href="#trabajo">Ver trabajo seleccionado</a><a class="hero-contact" href="mailto:{{ sitio.correo }}">Conversemos</a></div>
+<section class="py-hero">
+  <div class="py-hero-content">
+    <span class="eyebrow light">Espacio de trabajo</span>
+    <h1>Proyectos de Festina Lente</h1>
+    <p>Cada proyecto tiene una página propia para su equipo y su panel de expertos. Si forma parte de uno, use el enlace que le enviamos por correo.</p>
+    <div class="hero-actions"><a class="hero-contact" href="{{ sitio.url }}">Ir a festinalente.cc</a><a class="hero-link" href="mailto:{{ sitio.correo }}">Solicitar el enlace</a></div>
   </div>
-  <div class="hero-mark" aria-hidden="true"><div class="hero-logo-panel"><img src="{{ raiz }}brand/isotipo.png" alt=""></div></div>
   <div class="hero-note"><strong>Festina lente</strong><span>Diligencia y prudencia en cada decisión metodológica.</span></div>
-</section>
-
-<section class="intro section">
-  <span class="eyebrow">Agencia boutique</span>
-  <div>
-    <h2>Pocos proyectos. Atención directa del equipo científico.</h2>
-    <p>Manejamos un número limitado de proyectos al mismo tiempo. Así podemos conocer cada pregunta en profundidad, mantener una comunicación cercana y participar activamente en las decisiones que determinan la calidad del resultado.</p>
-  </div>
-</section>
-
-<section class="approach section">
-  <div class="section-title"><span class="eyebrow">Nuestro aporte</span><h2>Acompañamiento científico continuo</h2></div>
-  <div class="approach-grid">
-    <article><span>01</span><h3>Dar forma a la pregunta</h3><p>Ayudamos a precisar la idea, reconocer qué información existe y decidir qué tipo de proyecto puede responderla de manera útil y viable.</p></article>
-    <article><span>02</span><h3>Diseñar y ejecutar</h3><p>Definimos el método, coordinamos el trabajo y resolvemos con el cliente las decisiones científicas que aparecen durante la ejecución.</p></article>
-    <article><span>03</span><h3>Convertir resultados en productos</h3><p>Orientamos los hallazgos hacia el producto que mejor sirve a la audiencia: una publicación, un consenso, un concepto técnico, una herramienta o una estrategia de comunicación.</p></article>
-  </div>
-</section>
-
-<section class="section services-section" id="servicios">
-  <div class="section-title"><span class="eyebrow">Servicios</span><h2>Áreas de trabajo</h2></div>
-  <p class="transversal-note"><strong>La revisión de evidencia es transversal a nuestro trabajo.</strong> La profundidad y el método de revisión se definen según la pregunta, la decisión y el producto esperado.</p>
-  <div class="service-list">
-    <article class="service"><span>01</span><h3>Conceptos técnicos y científicos</h3><p>Análisis independientes sobre medicamentos, dispositivos, pruebas diagnósticas, estándares y decisiones clínicas o institucionales.</p></article>
-    <article class="service"><span>02</span><h3>Consensos y declaraciones de posición</h3><p>Procesos RAND/UCLA, Delphi y grupo nominal con trazabilidad entre la evidencia, la deliberación y las recomendaciones.</p></article>
-    <article class="service"><span>03</span><h3>Investigación clínica, registros y RWE</h3><p>Cohortes, registros institucionales o multicéntricos y estudios con historias clínicas y bases administrativas.</p></article>
-    <article class="service"><span>04</span><h3>Bioestadística y modelamiento</h3><p>Modelos longitudinales, jerárquicos y bayesianos, simulación, equivalencia clínica y análisis de sensibilidad.</p></article>
-    <article class="service"><span>05</span><h3>Juntas consultivas e investigación estratégica</h3><p>Consulta experta sobre práctica clínica, recorrido del paciente, adopción terapéutica, acceso y educación médica.</p></article>
-    <article class="service"><span>06</span><h3>Comunicación científica y desarrollos tecnológicos</h3><p>Publicaciones, estrategias educativas, instrumentos digitales y soluciones propias apoyadas en inteligencia artificial.</p></article>
-  </div>
-</section>
-
-<section class="technology">
-  <div><span class="eyebrow light">Tecnología e inteligencia artificial</span><h2>Desarrollos propios para apoyar el trabajo científico</h2></div>
-  <div>
-    <p>Diseñamos herramientas internas que apoyan tareas de búsqueda, extracción, estructuración de información, control de calidad y generación de productos. Estos desarrollos se adaptan a las necesidades de cada proyecto.</p>
-    <p class="technology-note">La inteligencia artificial amplía nuestra capacidad de trabajo. El criterio metodológico, la validación y las decisiones permanecen bajo responsabilidad del equipo científico.</p>
-  </div>
-</section>
-
-<section class="rwe">
-  <div><span class="eyebrow light">Evidencia de vida real</span><h2>Información clínica y administrativa a escala poblacional</h2></div>
-  <div>
-    <p>Contamos con una alianza estratégica con una institución que tiene capacidad para analizar información estructurada, semiestructurada y no estructurada de más de cinco millones de afiliados del sistema de salud colombiano.</p>
-    <p class="rwe-note">La ejecución depende de la factibilidad de cada pregunta, las autorizaciones éticas, la gobernanza institucional y las normas de protección de datos.</p>
-  </div>
-</section>
-
-<section class="section work-section" id="trabajo">
-  <div class="work-heading">
-    <div><span class="eyebrow">Trabajo seleccionado</span><h2>Algunas publicaciones</h2></div>
-    <p>Una selección breve de trabajos publicados que muestra diferentes preguntas y aproximaciones metodológicas.</p>
-  </div>
-  <div class="work-list">
-    <article class="work-item">
-      <div class="work-index">01</div>
-      <div class="work-image"><img src="{{ raiz }}work/semaglutide-tirzepatide.jpg" alt="Primera página: Equivalencia clínica de semaglutida y tirzepatida según dosis"></div>
-      <div class="work-copy">
-        <div class="work-type">Investigación original · Diabetes Therapy · 2026</div>
-        <h3>Equivalencia clínica de semaglutida y tirzepatida según dosis</h3>
-        <p>Modelamiento dosis-respuesta con 48 brazos de tratamiento y 16.524 participantes para estimar probabilidades de equivalencia y escenarios de intensificación.</p>
-        <div class="methods">Modelos aditivos generalizados / Splines bayesianos</div>
-        <a href="https://doi.org/10.1007/s13300-026-01886-0" target="_blank" rel="noreferrer">Ver publicación</a>
-      </div>
-    </article>
-    <article class="work-item">
-      <div class="work-index">02</div>
-      <div class="work-image"><img src="{{ raiz }}work/ted-review.jpg" alt="Primera página: Tratamientos farmacológicos para enfermedad ocular tiroidea activa"></div>
-      <div class="work-copy">
-        <div class="work-type">Revisión sistemática · 2026</div>
-        <h3>Tratamientos farmacológicos para enfermedad ocular tiroidea activa</h3>
-        <p>Síntesis de 58 estudios sobre eficacia, seguridad y posicionamiento terapéutico en enfermedad moderada a grave.</p>
-        <div class="methods">Revisión sistemática / Síntesis semicuantitativa</div>
-        <a href="https://doi.org/10.1177/11795514261426446" target="_blank" rel="noreferrer">Ver publicación</a>
-      </div>
-    </article>
-    <article class="work-item">
-      <div class="work-index">03</div>
-      <div class="work-image"><img src="{{ raiz }}work/ted-consensus.jpg" alt="Primera página: Recomendaciones para el manejo médico de la enfermedad ocular tiroidea"></div>
-      <div class="work-copy">
-        <div class="work-type">Consenso clínico · Revista ENCR · 2026</div>
-        <h3>Recomendaciones para el manejo médico de la enfermedad ocular tiroidea</h3>
-        <p>Panel multidisciplinario y escenarios clínicos evaluados mediante RAND/UCLA para orientar decisiones con evidencia incompleta o acceso variable.</p>
-        <div class="methods">RAND/UCLA / Panel multidisciplinario</div>
-        <a href="https://doi.org/10.53853/encr.13.1.994" target="_blank" rel="noreferrer">Ver publicación</a>
-      </div>
-    </article>
-    <article class="work-item">
-      <div class="work-index">04</div>
-      <div class="work-image"><img src="{{ raiz }}work/diabetes-incontinence.jpg" alt="Primera página: Diabetes tipo 2 e incontinencia urinaria"></div>
-      <div class="work-copy">
-        <div class="work-type">Scoping review y declaración de posición · Revista ENCR · 2025</div>
-        <h3>Diabetes tipo 2 e incontinencia urinaria</h3>
-        <p>Revisión de 32 artículos y proceso de grupo nominal con un panel multidisciplinario. El trabajo integró la evidencia disponible y la experiencia clínica para definir prioridades de atención.</p>
-        <div class="methods">PRISMA-ScR / Grupo nominal / Declaración de posición</div>
-        <a href="https://doi.org/10.53853/encr.12.3.947" target="_blank" rel="noreferrer">Ver publicación</a>
-      </div>
-    </article>
-  </div>
-</section>
-
-<section class="process">
-  <div class="section-title"><span class="eyebrow light">Organización</span><h2>Desarrollo de los proyectos</h2></div>
-  <div class="steps">
-    <div class="step"><span>01</span><h3>Definición</h3><p>Pregunta, audiencia, decisión y alcance.</p></div>
-    <div class="step"><span>02</span><h3>Diseño</h3><p>Método, fuentes, variables y análisis.</p></div>
-    <div class="step"><span>03</span><h3>Ejecución</h3><p>Coordinación, recolección y control de calidad.</p></div>
-    <div class="step"><span>04</span><h3>Entrega</h3><p>Informe, herramienta, presentación o publicación.</p></div>
-  </div>
-</section>
-
-<section class="team section" id="capacidades">
-  <div class="team-copy">
-    <span class="eyebrow">Capacidades</span>
-    <h2>Una estructura interdisciplinaria</h2>
-    <p>El núcleo de trabajo se adapta a las necesidades del proyecto. Cuando el alcance lo requiere, coordinamos expertos clínicos, paneles y redes multicéntricas.</p>
-  </div>
-  <div class="disciplines">
-    <div><span>01</span>Dirección científica</div>
-    <div><span>02</span>Epidemiología y metodología</div>
-    <div><span>03</span>Bioestadística y ciencia de datos</div>
-    <div><span>04</span>Gestión de proyectos</div>
-    <div><span>05</span>Escritura científica</div>
-    <div><span>06</span>Tecnología y automatización</div>
-  </div>
 </section>
 {% endblock %}

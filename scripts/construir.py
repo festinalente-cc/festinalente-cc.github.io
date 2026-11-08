@@ -100,9 +100,9 @@ def main() -> int:
     (SALIDA / "404.html").write_text(
         env.get_template("404.html").render(raiz="/", **comun), encoding="utf-8")
 
-    # Buscadores: la portada sí, los proyectos no.
+    # Buscadores: nada de este sitio se indexa (el sitio público es festinalente.cc).
     (SALIDA / "robots.txt").write_text(
-        "User-agent: *\nDisallow: /p/\n", encoding="utf-8")
+        "User-agent: *\nDisallow: /\n", encoding="utf-8")
     (SALIDA / "p" / ".keep").parent.mkdir(exist_ok=True)
     # Un index vacío en /p/ evita que GitHub liste algo si alguien entra ahí.
     (SALIDA / "p" / "index.html").write_text(
