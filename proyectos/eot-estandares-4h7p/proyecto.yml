@@ -2,15 +2,18 @@ publicar: true
 
 titulo: Estándares de cuidado de la enfermedad ocular tiroidea en adultos en Colombia
 subtitulo: Panel de expertos con el método de apropiación RAND/UCLA. Material de trabajo del panel, ronda 1.
-cliente: Proyecto de consenso
+cliente: Asociación Colombiana de Endocrinología, Diabetes y Metabolismo (ACE)
 codigo: EOT-2026
 inicio: 2026-09
 fin_previsto: 2027-01
 fase: Ejecución
 
+equipo_titulo: Equipo del proyecto
 equipo:
-  - nombre: Carlos E. Builes-Montaño
-    rol: Dirección científica y metodología
+  - nombre: Natalia Aristizábal Henao, MD, MSc
+    rol: Coordinación científica, ACE · Clínica Universitaria Bolivariana y Universidad Pontificia Bolivariana
+  - nombre: Carlos E. Builes-Montaño, MD, PhD
+    rol: Dirección metodológica, Festina Lente
   - nombre: Secretaría técnica Festina Lente
     rol: Coordinación del panel y manejo de datos
 

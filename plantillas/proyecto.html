@@ -53,7 +53,7 @@
   <aside class="py-lateral">
     {% if p.equipo %}
     <div class="py-bloque">
-      <span class="eyebrow">Equipo Festina Lente</span>
+      <span class="eyebrow">{{ p.equipo_titulo or "Equipo Festina Lente" }}</span>
       <ul class="py-personas">{% for m in p.equipo %}<li><strong>{{ m.nombre }}</strong><span>{{ m.rol }}</span></li>{% endfor %}</ul>
     </div>
     {% endif %}
