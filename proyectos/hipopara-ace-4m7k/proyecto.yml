@@ -13,7 +13,7 @@ ahora:
     documento, lea el resumen del cambio principal más abajo y la matriz de
     respuesta a los comentarios. Envíe sus observaciones por correo o por
     WhatsApp, o directamente como comentarios en el archivo de Word.
-  plazo:            # fecha límite, p. ej. 2026-11-21 (dejar vacío si no hay)
+  plazo: 2026-11-10   # 72 horas desde la entrega del 7 de noviembre
   archivo: hipoparatiroidismo-ACE-revision1-2026-11-07.docx
   boton: Abrir la revisión 1 (Word)
 
