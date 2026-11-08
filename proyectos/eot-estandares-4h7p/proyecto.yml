@@ -57,7 +57,7 @@ cronograma:
 documentos:
   - archivo: Fichas_evidencia_EOT.pdf
     titulo: Fichas de evidencia (PDF)
-    descripcion: Las 19 fichas en un solo documento, para leer sin conexión o imprimir. El contenido es el mismo de las páginas P01 a P19.
+    descripcion: Versión 1.1 (8 de noviembre). Las 19 fichas en un solo documento, para leer sin conexión o imprimir; el contenido es el mismo de las páginas P01 a P19.
   - archivo: Anexo_tecnico_evidencia_por_pregunta_EOT.xlsx
     titulo: Anexo técnico (Excel)
     descripcion: Una hoja por pregunta con cada fuente, su calidad, las recomendaciones y los resultados, con la cita textual, la página y la línea.
