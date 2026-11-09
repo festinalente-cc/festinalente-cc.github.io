@@ -1,6 +1,6 @@
 La medición rutinaria de 25(OH)D es lo que más impulsa la formulación en el panel: los seis le dan un peso de «bastante» o «mucho». Es justo la práctica que las guías recientes desaconsejan (ficha [T3a](../t3a/)). El eje de obesidad y metabolismo es el que más conocen, el que más prometedor ven y el primero que priorizan para formación.
 
-<div class="py-aviso">Respondieron 6 de los 7 miembros de la mesa, entre el 28 de octubre y el 4 de noviembre de 2026. El doctor Andrés Felipe Coy Barrera participa en la discusión sin votar. Los códigos entre paréntesis (A4, F1, G2…) remiten a las preguntas del formulario.</div>
+<div class="py-aviso">Respondieron 6 de los 7 miembros de la mesa, entre el 28 de octubre y el 4 de noviembre de 2026. El doctor Andrés Felipe Coy Barrera, endocrinólogo, se unió a la mesa después del formulario: participa en la sesión, pero sus respuestas no están en estos resultados. Los códigos entre paréntesis (A4, F1, G2…) remiten a las preguntas del formulario.</div>
 
 ## Quiénes respondieron
 
