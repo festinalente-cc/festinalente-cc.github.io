@@ -48,14 +48,17 @@ ahora:
   plazo: 2026-11-13
 
 cronograma:
+  - fecha: 2026-10-26
+    hito: Firma del acta de inicio
+    estado: hecho
   - fecha: 2026-10-28
-    hito: Formulario individual del panel (6 de 7 respuestas)
+    hito: Envío del formulario individual al panel
     estado: hecho
   - fecha: 2026-11-04
-    hito: Cierre del formulario
+    hito: Cierre del formulario (6 de 7 respuestas)
     estado: hecho
   - fecha: 2026-11-08
-    hito: "Revisión de la evidencia: 74 estudios en 14 temas, con evaluación de calidad"
+    hito: "Análisis de respuestas y contraste con la literatura: 74 estudios en 14 temas, con evaluación de calidad"
     estado: hecho
   - fecha: 2026-11-08
     hito: Prelectura disponible en este sitio
@@ -63,11 +66,11 @@ cronograma:
   - fecha: 2026-11-13
     hito: Sesión presencial de la mesa
     estado: pendiente
-  - fecha: 2026-11
-    hito: Ronda virtual asincrónica de síntesis (fecha por definir)
+  - fecha: 2026-11-14
+    hito: Segunda ronda virtual asincrónica de síntesis, del 14 al 19 de noviembre (fecha por confirmar en la sesión)
     estado: pendiente
-  - fecha: 2026-12
-    hito: Informe final para la ACE
+  - fecha: 2026-11-23
+    hito: Informe final para la ACE (fecha por confirmar en la sesión)
     estado: pendiente
 
 documentos:

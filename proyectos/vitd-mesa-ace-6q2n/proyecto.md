@@ -15,7 +15,7 @@ La mesa reúne a siete médicos para entender qué impulsa la formulación de vi
 
 La sesión es presencial y está organizada alrededor de las [cinco preguntas transversales](preguntas/). Para cada tema en discusión se revisa la ficha, se contrasta con la experiencia del panel y se registran los acuerdos, las discrepancias y las propuestas de educación o investigación. No se vota.
 
-Después viene una ronda virtual asincrónica para revisar la síntesis de la sesión. Con esa versión revisada se prepara el informe final para la ACE. Los hallazgos se compartirán con el aliado estratégico del proyecto como insumo para proyectos académicos y científicos, no para promoción.
+Del 14 al 19 de noviembre sigue una ronda virtual asincrónica en la que cada panelista revisa y ajusta la síntesis de la sesión; los puntos sin acuerdo se reportan como abiertos. Con esa versión se prepara el informe final para la ACE, previsto para el 23 de noviembre. Estas fechas se confirmarán al cierre de la sesión. Los hallazgos se compartirán con el aliado estratégico del proyecto como insumo para proyectos académicos y científicos, no para promoción.
 
 ## Antes de leer
 
