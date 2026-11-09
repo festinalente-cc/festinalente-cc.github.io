@@ -576,3 +576,12 @@ footer h2 { font-size: 2.8rem; }
 .py-mensaje pre { white-space: pre-wrap; font: inherit; background: var(--paper); padding: 16px 18px; margin: 10px 0 0; color: var(--charcoal); line-height: 1.6; }
 .py-nota-indice { color: var(--muted); font-size: .88rem; margin-top: 40px; max-width: 720px; }
 .py-nota-indice code { background: var(--paper); padding: 1px 5px; }
+/* Semáforo de evidencia (fichas) */
+.py-semaforo { margin: 0 0 28px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
+.py-sem { display: inline-block; padding: 3px 10px; font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; white-space: nowrap; border-left: 3px solid currentColor; }
+.py-sem.verde { background: #e3efe4; color: #1f5a2b; }
+.py-sem.ambar { background: #f8ecd0; color: #7a5200; }
+.py-sem.rojo { background: #f6dcd8; color: #8a2419; }
+.py-sem-nota { color: var(--muted); font-size: .9rem; }
+.py-contenido img { display: block; max-width: 100%; height: auto; border: 1px solid var(--line); margin: 8px 0 28px; }
+.py-contenido td .py-sem { font-size: .66rem; }

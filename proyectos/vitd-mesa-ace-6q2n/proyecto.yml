@@ -1,0 +1,88 @@
+publicar: true
+
+titulo: Mesa de expertos sobre la formulación de vitamina D
+subtitulo: >-
+  Lo que respondió el panel frente a lo que muestra la evidencia, en 14 temas más allá del hueso.
+  Material de prelectura para la sesión presencial del 13 de noviembre.
+cliente: Asociación Colombiana de Endocrinología, Diabetes y Metabolismo (ACE)
+codigo: VITD-2026
+inicio: 2026-10
+fase: Ejecución
+
+equipo_titulo: Equipo del proyecto
+equipo:
+  - nombre: Carlos E. Builes-Montaño, MD, PhD
+    rol: Dirección metodológica, Festina Lente
+  - nombre: Secretaría técnica Festina Lente
+    rol: Revisión de la evidencia, coordinación del panel y manejo de datos
+
+panelistas:
+  - nombre: Geraldine Altamar Canales
+    afiliacion: Geriatría
+    ciudad: Cali
+  - nombre: Andrés Felipe Coy Barrera
+    afiliacion: Participa en la discusión, sin voto
+    ciudad: Bogotá
+  - nombre: David Monroy Duque
+    afiliacion: Psiquiatría
+    ciudad: Medellín
+  - nombre: Jorge Iván Palacio Uribe
+    afiliacion: Medicina del deporte
+    ciudad: Medellín
+  - nombre: Pilar Cristina Ruiz Blanco
+    afiliacion: Endocrinología
+    ciudad: Bogotá
+  - nombre: José Luis Torres Grajales
+    afiliacion: Endocrinología
+    ciudad: Medellín
+  - nombre: Esdras Martín Vásquez Mejía
+    afiliacion: Endocrinología
+    ciudad: Medellín
+
+ahora:
+  titulo: Prelectura para la sesión del 13 de noviembre
+  texto: >-
+    Empiece por el resumen de los 14 temas y la página con lo que respondió el panel. Luego lea las fichas de los
+    temas que más le interesen y las cinco preguntas para la sesión. No hay que responder nada: la discusión es
+    presencial. Si prefiere leer sin conexión, descargue las fichas en PDF.
+  plazo: 2026-11-13
+
+cronograma:
+  - fecha: 2026-10-28
+    hito: Formulario individual del panel (6 de 7 respuestas)
+    estado: hecho
+  - fecha: 2026-11-04
+    hito: Cierre del formulario
+    estado: hecho
+  - fecha: 2026-11-08
+    hito: "Revisión de la evidencia: 74 estudios en 14 temas, con evaluación de calidad"
+    estado: hecho
+  - fecha: 2026-11-08
+    hito: Prelectura disponible en este sitio
+    estado: en-curso
+  - fecha: 2026-11-13
+    hito: Sesión presencial de la mesa
+    estado: pendiente
+  - fecha: 2026-11
+    hito: Ronda virtual asincrónica de síntesis (fecha por definir)
+    estado: pendiente
+  - fecha: 2026-12
+    hito: Informe final para la ACE
+    estado: pendiente
+
+documentos:
+  - archivo: Fichas_evidencia_vitD.pdf
+    titulo: Fichas de evidencia (PDF)
+    descripcion: Versión 1.0 (8 de noviembre). El resumen, los resultados del panel, las 14 fichas, las preguntas para la sesión y las referencias en un solo documento, para leer sin conexión o imprimir.
+  - archivo: Anexo_tecnico_evidencia_por_tema_vitD.xlsx
+    titulo: Anexo técnico (Excel)
+    descripcion: Una hoja por tema con cada estudio, su diseño, su calidad y sus resultados, con la cita textual del artículo de donde sale cada cifra.
+  - archivo: Referencias_incluidas_vitD.xlsx
+    titulo: Referencias incluidas (Excel)
+    descripcion: Los 74 estudios del corpus, por código, con DOI, PubMed, tipo de estudio, calidad y temas a los que aportan.
+
+novedades:
+  - fecha: 2026-11-08
+    texto: Se publica la prelectura con las 14 fichas de evidencia y los resultados del formulario del panel.
+
+contacto: cbuiles@festinalente.cc
