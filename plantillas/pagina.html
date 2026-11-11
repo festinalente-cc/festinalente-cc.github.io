@@ -2,6 +2,7 @@
 {% block titulo %}{{ pg.titulo }} · {{ p.titulo }} | {{ sitio.nombre }}{% endblock %}
 {% block descripcion %}{{ pg.resumen or p.subtitulo or p.titulo }}{% endblock %}
 {% block robots %}<meta name="robots" content="noindex, nofollow">{% endblock %}
+{% block cabeza %}{% for e in pg.estilos %}<link rel="stylesheet" href="{{ raiz }}p/{{ slug }}/recursos/{{ e }}">{% endfor %}{% endblock %}
 {% block nav %}
   <a href="{{ raiz }}p/{{ slug }}/">Inicio del proyecto</a>
   <a href="{{ raiz }}p/{{ slug }}/#paginas">Contenido</a>
@@ -9,7 +10,7 @@
   <a class="nav-contact" href="mailto:{{ p.contacto or sitio.correo }}">Contacto</a>
 {% endblock %}
 {% block pie_titulo %}¿Dudas sobre este proyecto?{% endblock %}
-{% block pie_texto %}Escríbanos por correo o por WhatsApp. Esta página es de uso interno del equipo y del panel; por favor no comparta el enlace fuera del grupo de trabajo.{% endblock %}
+{% block pie_texto %}{{ p.pie_texto or 'Escríbanos por correo o por WhatsApp. Esta página es de uso interno del equipo y del panel; por favor no comparta el enlace fuera del grupo de trabajo.' }}{% endblock %}
 {% block cuerpo %}
 <section class="py-hero py-hero-pagina">
   <div class="py-hero-content">
@@ -43,4 +44,5 @@
     {% endfor %}
   </aside>
 </section>
+{% for s in pg.scripts %}<script src="{{ raiz }}p/{{ slug }}/recursos/{{ s }}" defer></script>{% endfor %}
 {% endblock %}

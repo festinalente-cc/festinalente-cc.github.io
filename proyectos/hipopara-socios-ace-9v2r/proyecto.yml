@@ -1,0 +1,65 @@
+# Consulta a los socios de la ACE sobre la declaración de hipoparatiroidismo.
+# Micrositio separado del espacio del panel (hipopara-ace-4m7k): no se enlazan entre sí.
+titulo: "Hipoparatiroidismo crónico: consulta a los socios de la ACE"
+subtitulo: Encuesta de respaldo a la declaración de posición sobre mal control y candidatura a reemplazo con PTH
+cliente: Asociación Colombiana de Endocrinología, Diabetes y Metabolismo (ACE)
+inicio: 2026-11
+fase: Diseño
+contacto: cbuiles@festinalente.cc
+pie_texto: >-
+  Escríbanos por correo o por WhatsApp. Este espacio es para los socios de la ACE;
+  por favor no comparta el enlace fuera de la asociación.
+mensaje: |-
+  Estimado(a) socio(a) de la ACE:
+  Lo invitamos a opinar sobre la declaración de posición de la ACE sobre hipoparatiroidismo crónico y candidatura a reemplazo con PTH. Son 8 fichas breves y unos 10 minutos:
+  {url}
+  {plazo}
+  Gracias por su aporte.
+
+ahora:
+  titulo: "Versión de prueba: por favor no responda todavía"
+  texto: >-
+    Este espacio está en preparación. Cuando se abra la consulta, aquí encontrará
+    las instrucciones y el enlace a la encuesta.
+  # plazo: 2026-12-04
+
+equipo_titulo: Equipo coordinador
+equipo:
+  - nombre: Carlos E. Builes-Montaño
+    rol: Coordinación científica · Hospital Pablo Tobón Uribe y Universidad de Antioquia, Medellín
+  - nombre: Natalia A. Rojas-Henao
+    rol: Equipo coordinador · Universidad de Antioquia, Medellín
+
+panelistas:
+  - nombre: Luis Felipe Fierro-Maya
+    afiliacion: Unidad de Endocrinología Oncológica, Instituto Nacional de Cancerología
+    ciudad: Bogotá
+  - nombre: Natalia Aristizábal-Henao
+    afiliacion: Clínica Universitaria Bolivariana · Universidad Pontificia Bolivariana
+    ciudad: Medellín
+  - nombre: Andrés Felipe García-Ramos
+    afiliacion: Universidad del Valle · Hospital Universitario del Valle
+    ciudad: Cali
+  - nombre: Andrey Moreno-Torres
+    afiliacion: Instituto Nacional de Cancerología · Clínica del Country
+    ciudad: Bogotá
+  - nombre: Paula Andrea Granda-Carvajal
+    afiliacion: Servicios de Salud IPS Suramericana
+    ciudad: Medellín
+  - nombre: Carolina Jaramillo-Arango
+    afiliacion: Hospital Pablo Tobón Uribe
+    ciudad: Medellín
+
+cronograma:
+  - fecha: 2026
+    hito: Revisión sistemática, dos rondas de calificación y reunión del panel (método RAND/UCLA)
+    estado: hecho
+  - fecha: 2026-11
+    hito: Aprobación del manuscrito por el panel
+    estado: en-curso
+  - fecha: 2026-12
+    hito: Encuesta a los socios de la ACE
+    estado: pendiente
+  - fecha: 2027
+    hito: Versión final con los resultados de la consulta y envío a la revista
+    estado: pendiente

@@ -193,12 +193,16 @@ def main() -> int:
                 print(f"AVISO {slug}: documentos declarados que no existen: {faltan}",
                       file=sys.stderr)
 
+        # Recursos propios del proyecto (js, css, imágenes) en proyectos/<slug>/recursos/.
+        if (carpeta / "recursos").exists():
+            shutil.copytree(carpeta / "recursos", destino / "recursos")
+
         fases = sitio.get("fases", [])
         fase_idx = fases.index(p["fase"]) if p.get("fase") in fases else -1
         p.setdefault("actualizado", fecha_git(carpeta))
 
         # Subpáginas: proyectos/<slug>/paginas/<nombre>.md con encabezado YAML
-        # (titulo, orden, grupo, resumen, formulario). Se publican en /p/<slug>/<nombre>/.
+        # (titulo, orden, grupo, resumen, formulario, estilos, scripts). Se publican en /p/<slug>/<nombre>/.
         paginas = []
         carpeta_pag = carpeta / "paginas"
         if carpeta_pag.exists():
@@ -209,6 +213,7 @@ def main() -> int:
                     nombre=archivo.stem, titulo=meta.get("titulo", archivo.stem),
                     orden=meta.get("orden", 999), grupo=meta.get("grupo", ""),
                     resumen=meta.get("resumen", ""), formulario=meta.get("formulario"),
+                    estilos=meta.get("estilos") or [], scripts=meta.get("scripts") or [],
                     html=md.convert(texto)))
             paginas.sort(key=lambda x: (x["orden"], x["nombre"]))
             grupos = []
