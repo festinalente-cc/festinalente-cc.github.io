@@ -1,10 +1,34 @@
-## Cambio principal de la revisión 1
+## Qué cambió en la revisión 2
+
+La definición de candidato no cambia. La matriz de cambios detalla cada punto; en resumen:
+
+1. **Terminología**: se precisa «dominios de control inadecuado» y la intolerancia se refiere a dosis altas de calcio y calcitriol.
+2. **Optimización (paso 2 y Recuadro 1)**: «calcio por encima de las metas», énfasis en el fósforo inorgánico de los aditivos, ejemplo de dosis de tiazida (hidroclorotiazida 25 mg cada 12 horas) con vigilancia de sodio, potasio, magnesio y presión arterial, absorción saturable del calcio, y ajuste de la levotiroxina para evitar la supresión excesiva de la TSH.
+3. **Dosis alta (Recuadro 2)**: no es apropiado mantener calcio sin calcitriol en este contexto.
+4. **Tabla 1**: ejemplos de desencadenantes identificables o corregibles en las urgencias.
+5. **Discusión**: párrafo nuevo sobre la ruta de complicaciones del tratamiento convencional. La nefrocalcinosis, la nefrolitiasis y el deterioro renal son dominios y siguen la misma regla; la complicación renal aislada no se valoró y requiere juicio individual.
+6. **Ajustes del equipo coordinador**: composición del panel, sección «Changes to the planned process», anonimato en Limitaciones y afiliaciones.
+
+## Puntos abiertos
+
+- ¿Incluimos un recuadro de mensajes clave al inicio con la definición de candidato y la separación entre mal control y limitaciones?
+- Si alguien cuenta con una referencia sobre el efecto de la supresión de la TSH en la absorción de calcio, puede añadirse el mecanismo al Recuadro 1.
+
+## Qué esperamos del panel en esta ronda
+
+- Aprobar la revisión 2 o señalar cualquier punto que no refleje lo acordado.
+- Responder los puntos abiertos.
+- Enviar la aprobación u observaciones por correo, por WhatsApp o como comentarios en el archivo de Word.
+
+Tras la aprobación del panel, la declaración se compartirá con los socios de la ACE para comentarios cualitativos; la versión final reportará el análisis de esa consulta e incluirá la declaración de financiación.
+
+## Revisión 1: cambio principal
 
 El mal control se define únicamente por los dominios de la Tabla 1. Las limitaciones del tratamiento convencional (intolerancia persistente y malabsorción comprobada) dejan de ser dominios: justifican evaluar el reemplazo con PTH solo cuando persiste al menos un dominio de mal control. Es candidato a evaluación quien cumple dos o más dominios, o un dominio más una limitación. El requerimiento de dosis altas pasa a ser un punto de buena práctica que motiva revisar la terapia.
 
 Como esto precisa lo votado en los enunciados D4a–D4c sin una nueva votación, el manuscrito lo reporta como desviación del protocolo.
 
-## Qué cambió, por sección
+## Revisión 1: qué cambió, por sección
 
 La matriz de respuesta a los comentarios detalla cada punto. En resumen:
 
@@ -16,11 +40,3 @@ La matriz de respuesta a los comentarios detalla cada punto. En resumen:
 6. **Definiciones operativas (Tabla 1)**: nota sobre dominios que se cuentan por separado (punto para aprobación del panel), referencia KDIGO 2024 y recomendación de ecografía renal basal al cronificarse el hipoparatiroidismo.
 7. **Presentación**: Tabla 3 agrupada por tema con el uso de cada ítem; nueva Figura 1 como árbol de decisión y nueva Figura 2 con las medianas por ítem en las dos rondas.
 8. **Proceso del panel**: se describe la participación de los panelistas que no asistieron a la reunión y se actualizan las declaraciones de interés.
-
-## Qué esperamos del panel en esta ronda
-
-- Confirmar que los comentarios propios quedaron bien recogidos en la matriz y en el texto.
-- Señalar cualquier punto de la revisión 1 que no refleje lo acordado en las rondas de calificación.
-- Enviar las observaciones por correo, por WhatsApp o como comentarios en el archivo de Word.
-
-Tras la aprobación del panel, la declaración se compartirá con los socios de la ACE para comentarios cualitativos; la versión final reportará el análisis de esa consulta e incluirá la declaración de financiación.

@@ -7,22 +7,29 @@ contacto: cbuiles@festinalente.cc
 
 # Bloque destacado al inicio de la página
 ahora:
-  titulo: La revisión 1 del manuscrito está lista para su valoración
+  titulo: La revisión 2 del manuscrito está lista para su aprobación
   texto: >-
-    Incorpora los 43 comentarios del panel al borrador 1. Antes de abrir el
-    documento, lea el resumen del cambio principal más abajo y la matriz de
-    respuesta a los comentarios. Envíe sus observaciones por correo o por
-    WhatsApp, o directamente como comentarios en el archivo de Word.
-  plazo: 2026-11-10   # 72 horas desde la entrega del 7 de noviembre
-  archivo: hipoparatiroidismo-ACE-revision1-2026-11-07.docx
-  boton: Abrir la revisión 1 (Word)
+    Incorpora los 17 comentarios y los 6 textos resaltados de la segunda
+    ronda de revisión, y un párrafo nuevo en la discusión sobre las
+    complicaciones del tratamiento convencional. Antes de abrir el documento,
+    lea el resumen de cambios más abajo y la matriz de cambios. Envíe su
+    aprobación u observaciones por correo, por WhatsApp o como comentarios en
+    el archivo de Word.
+  plazo: 2026-11-13   # 72 horas desde la entrega del 10 de noviembre
+  archivo: hipoparatiroidismo-ACE-revision2-2026-11-10.docx
+  boton: Abrir la revisión 2 (Word)
 
 versiones:
+  - nombre: Revisión 2
+    fecha: 2026-11-10
+    estado: vigente
+    archivo: hipoparatiroidismo-ACE-revision2-2026-11-10.docx
+    nota: Incorpora la segunda ronda de comentarios del panel. Pendiente de aprobación del panel.
   - nombre: Revisión 1
     fecha: 2026-11-07
-    estado: vigente
+    estado: superada
     archivo: hipoparatiroidismo-ACE-revision1-2026-11-07.docx
-    nota: Incorpora los comentarios del panel al borrador 1. Pendiente de aprobación del panel.
+    nota: Incorpora los 43 comentarios del panel al borrador 1.
   - nombre: Borrador 1
     fecha: 2026-10
     estado: superada
@@ -30,12 +37,18 @@ versiones:
     nota: Primera versión completa, revisada por el panel (43 comentarios).
 
 documentos:
+  - archivo: matriz-cambios-panel-revision2.pdf
+    titulo: Matriz de cambios (revisión 2)
+    descripcion: Cada comentario de la segunda ronda, la respuesta y el cambio hecho en el manuscrito, más los ajustes del equipo coordinador.
+  - archivo: hipoparatiroidismo-ACE-revision2-2026-11-10.docx
+    titulo: Manuscrito, revisión 2 (10 de noviembre de 2026)
+    descripcion: Versión vigente, en inglés, para aprobación del panel.
   - archivo: respuesta-comentarios-panel-revision1.pdf
     titulo: Respuesta a los comentarios del panel (revisión 1)
     descripcion: Matriz con cada comentario, la respuesta del equipo coordinador y el cambio hecho en el manuscrito.
   - archivo: hipoparatiroidismo-ACE-revision1-2026-11-07.docx
     titulo: Manuscrito, revisión 1 (7 de noviembre de 2026)
-    descripcion: Versión vigente, en inglés, para valoración del panel.
+    descripcion: Versión anterior, solo para consulta.
   - archivo: hipoparatiroidismo-ACE-borrador1.docx
     titulo: Manuscrito, borrador 1
     descripcion: Versión anterior, solo para consulta.
@@ -80,7 +93,10 @@ cronograma:
     hito: Borrador 1 del manuscrito y revisión por el panel
     estado: hecho
   - fecha: 2026-11
-    hito: Revisión 1 en valoración por el panel
+    hito: Revisión 1 valorada por el panel
+    estado: hecho
+  - fecha: 2026-11
+    hito: Revisión 2 en aprobación por el panel
     estado: en-curso
   - fecha: 2026-11
     hito: Aprobación del panel
@@ -93,5 +109,7 @@ cronograma:
     estado: pendiente
 
 novedades:
+  - fecha: 2026-11-10
+    texto: Se publica la revisión 2 del manuscrito con la matriz de cambios de la segunda ronda de comentarios.
   - fecha: 2026-11-07
     texto: Se publica la revisión 1 del manuscrito con la matriz de respuesta a los 43 comentarios del panel.
