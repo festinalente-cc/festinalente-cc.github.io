@@ -113,10 +113,10 @@
   var FACTIBLE = [["si", "Sí, habitualmente"], ["dificil", "Con dificultad o demora"], ["no", "No"]];
 
   var PERFIL = [
-    { id: "P_especialidad", txt: "Especialidad", ops: [["endo_adultos", "Endocrinología de adultos"], ["endo_pediatrica", "Endocrinología pediátrica"], ["medicina_interna", "Medicina interna"], ["otra", "Otra"]] },
-    { id: "P_anios", txt: "Años de ejercicio de la especialidad", ops: [["<5", "Menos de 5"], ["5-9", "5 a 9"], ["10-19", "10 a 19"], [">=20", "20 o más"]] },
+    { id: "P_especialidad", txt: "Especialidad", ops: [["endo_adultos", "Endocrinología de adultos"], ["endo_pediatrica", "Endocrinología pediátrica"], ["residente", "Residente de endocrinología"]] },
+    { id: "P_anios", txt: "Años de ejercicio como especialista", ops: [["residente", "No aplica: soy residente"], ["<5", "Menos de 5"], ["5-9", "5 a 9"], ["10-19", "10 a 19"], [">=20", "20 o más"]] },
     { id: "P_ambito", txt: "Ámbito principal de práctica", ops: [["publico", "Público"], ["privado", "Privado"], ["mixto", "Mixto"], ["academico", "Principalmente académico"]] },
-    { id: "P_region", txt: "Región donde ejerce", ops: [["bogota", "Bogotá"], ["andina", "Región Andina (sin Bogotá)"], ["caribe", "Caribe"], ["pacifica", "Pacífica"], ["orinoquia_amazonia", "Orinoquía o Amazonía"], ["exterior", "Fuera de Colombia"]] },
+    { id: "P_capitulo", txt: "Capítulo de la ACE al que pertenece", ops: [["bolivar_grande", "Bolívar Grande"], ["caribe", "Caribe"], ["central", "Central"], ["eje_cafetero", "Eje Cafetero"], ["noroccidente", "Noroccidente"], ["nororiente", "Nororiente"], ["suroccidente", "Suroccidente"]] },
     { id: "P_pacientes", txt: "Adultos con hipoparatiroidismo crónico que atendió en el último año", ops: [["0", "Ninguno"], ["1-5", "1 a 5"], ["6-20", "6 a 20"], [">20", "Más de 20"]] },
     { id: "P_coi", txt: "En los últimos 36 meses, ¿ha tenido relaciones financieras (asesorías, conferencias, investigación) con alguna compañía que comercialice terapias con PTH?", ops: [["no", "No"], ["si", "Sí"], ["nr", "Prefiero no responder"]] }
   ];
