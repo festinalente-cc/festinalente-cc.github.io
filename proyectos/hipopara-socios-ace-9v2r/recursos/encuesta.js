@@ -72,7 +72,7 @@
         "<li>Fósforo sérico en el rango de referencia y producto calcio × fósforo de 55 mg²/dL² o menos, con el calcio tomado con las comidas como quelante y moderación del fósforo de la dieta, sobre todo el inorgánico de los aditivos.</li>" +
         "<li>Calciuria por debajo de los umbrales de la ficha 3, con restricción de sodio (sal menor de 6 g/día) y tiazida cuando haga falta (por ejemplo, hidroclorotiazida 25 mg cada 12 horas), vigilando hiponatremia, hipopotasemia, hipomagnesemia e hipotensión, y con cautela en insuficiencia suprarrenal e hipocalcemia autosómica dominante.</li>" +
         "<li>Sal de calcio y horario adecuados: citrato con inhibidores de bomba de protones o aclorhidria; 500 mg o menos de calcio elemental por toma, porque la absorción es saturable; calcitriol en dosis fraccionadas.</li>" +
-        "<li>Adherencia verificada y revisión de medicamentos y condiciones que interfieren, incluida la supresión excesiva de la TSH con levotiroxina, cuya dosis debe ajustarse a la meta de cada paciente.</li>" +
+        "<li>Adherencia verificada y revisión de medicamentos y condiciones que interfieren, incluidos los niveles elevados de hormonas tiroideas por sobretratamiento con levotiroxina, que reducen la absorción intestinal de calcio; la dosis de levotiroxina debe ajustarse a la meta de cada paciente.</li>" +
         "<li>Calcio, fósforo, magnesio y creatinina séricos, y calciuria de 24 horas, después de cada cambio de dosis y en cada evaluación.</li></ol>",
       items: [{ id: "F5", texto: null }]
     },
