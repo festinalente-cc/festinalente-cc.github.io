@@ -1,4 +1,4 @@
-/* Encuesta a los socios de la ACE: declaración de posición sobre hipoparatiroidismo crónico.
+/* Encuesta al Comité de Tiroides y Paratiroides de la ACE: declaración de posición sobre hipoparatiroidismo crónico.
  * Renderiza las fichas y las preguntas dentro de #enc-raiz y envía las respuestas a un
  * Google Apps Script (data-endpoint). Sin endpoint, funciona en modo de prueba.
  * El contenido de las fichas está en FICHAS; los nombres de campo son estables para el análisis.
@@ -113,6 +113,7 @@
   var FACTIBLE = [["si", "Sí, habitualmente"], ["dificil", "Con dificultad o demora"], ["no", "No"]];
 
   var PERFIL = [
+    { id: "P_comite", txt: "¿Es miembro del Comité de Tiroides y Paratiroides de la ACE?", ops: [["si", "Sí"], ["no", "No"]] },
     { id: "P_especialidad", txt: "Especialidad", ops: [["endo_adultos", "Endocrinología de adultos"], ["endo_pediatrica", "Endocrinología pediátrica"], ["residente", "Residente de endocrinología"]] },
     { id: "P_anios", txt: "Años de ejercicio como especialista", ops: [["residente", "No aplica: soy residente"], ["<5", "Menos de 5"], ["5-9", "5 a 9"], ["10-19", "10 a 19"], [">=20", "20 o más"]] },
     { id: "P_ambito", txt: "Ámbito principal de práctica", ops: [["publico", "Público"], ["privado", "Privado"], ["mixto", "Mixto"], ["academico", "Principalmente académico"]] },
@@ -185,11 +186,11 @@
   // Registro
   var reg = el("section", { "class": "enc-bloque", id: "enc-registro" });
   reg.appendChild(el("h2", null, "1. Sus datos"));
-  reg.appendChild(el("p", null, "Su nombre y su correo se usan solo para verificar que es socio de la ACE y evitar respuestas duplicadas. Se guardan aparte de sus respuestas, que se analizan con un código y se informan solo de forma agregada."));
+  reg.appendChild(el("p", null, "Su nombre y su correo se usan solo para evitar respuestas duplicadas y enviarle los resultados. Se guardan aparte de sus respuestas, que se analizan con un código y se informan solo de forma agregada."));
   var campos = el("div", { "class": "enc-campos" });
   campos.innerHTML =
     "<label>Nombre completo<input type='text' name='I_nombre' autocomplete='name' required></label>" +
-    "<label>Correo electrónico registrado en la ACE<input type='email' name='I_correo' autocomplete='email' required></label>" +
+    "<label>Correo electrónico<input type='email' name='I_correo' autocomplete='email' required></label>" +
     "<label class='enc-trampa' aria-hidden='true'>Sitio web<input type='text' name='sitio_web' tabindex='-1' autocomplete='off'></label>";
   reg.appendChild(campos);
   PERFIL.forEach(function (p) {
@@ -245,7 +246,7 @@
   fin.appendChild(el("label", { "class": "enc-check" },
     "<input type='checkbox' name='I_agradecimientos'> Acepto que mi nombre aparezca en los agradecimientos del artículo como participante de la consulta. Entiendo que esto no implica que respalde la versión final."));
   fin.appendChild(el("label", { "class": "enc-check" },
-    "<input type='checkbox' name='I_consentimiento' required> Autorizo el tratamiento de mis datos personales para esta consulta, conforme a la Ley 1581 de 2012. Responsable: Festina Lente, por encargo de la ACE. Finalidad: verificar la condición de socio, evitar duplicados y, si lo autorizo, incluir mi nombre en los agradecimientos. Mis respuestas se analizarán con un código y se informarán solo de forma agregada. Puedo consultar, corregir o pedir la supresión de mis datos escribiendo a cbuiles@festinalente.cc."));
+    "<input type='checkbox' name='I_consentimiento' required> Autorizo el tratamiento de mis datos personales para esta consulta, conforme a la Ley 1581 de 2012. Responsable: Festina Lente, por encargo de la ACE. Finalidad: evitar respuestas duplicadas, enviarle los resultados y, si lo autorizo, incluir mi nombre en los agradecimientos. Mis respuestas se analizarán con un código y se informarán solo de forma agregada. Puedo consultar, corregir o pedir la supresión de mis datos escribiendo a cbuiles@festinalente.cc."));
   var est = el("p", { "class": "enc-estado", "aria-live": "polite" });
   var btn = el("button", { type: "button", "class": "hero-contact enc-enviar" }, "Enviar respuestas");
   fin.appendChild(btn);

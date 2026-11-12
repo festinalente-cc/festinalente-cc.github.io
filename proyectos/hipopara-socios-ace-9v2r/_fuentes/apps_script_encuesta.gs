@@ -5,8 +5,9 @@
  *  1. Cree una hoja de Google nueva, p. ej. «Encuesta socios ACE – hipoparatiroidismo».
  *  2. Extensiones → Apps Script. Borre el contenido y pegue este archivo. Guarde.
  *  3. Ejecute una vez la función `preparar` (pide permisos) para crear las pestañas.
- *  4. Pegue en la pestaña «Directorio», desde la fila 2: columna A correo, columna B capítulo,
- *     columna C categoría (adultos, pediatría o residente). B y C son opcionales.
+ *  4. (Opcional) Si en algún momento se tiene la lista de miembros del comité, pegue en la pestaña
+ *     «Directorio», desde la fila 2: columna A correo, B capítulo, C categoría. Sin lista, déjela vacía:
+ *     la columna verificado_socio quedará en «no» y no afecta el envío.
  *     La hoja NO debe compartirse: contiene datos personales.
  *  5. Implementar → Nueva implementación → Tipo: Aplicación web.
  *     Ejecutar como: Yo. Quién tiene acceso: Cualquier persona. Implementar.

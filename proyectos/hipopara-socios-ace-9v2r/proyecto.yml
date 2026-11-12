@@ -1,16 +1,16 @@
-# Consulta a los socios de la ACE sobre la declaración de hipoparatiroidismo.
+# Consulta al Comité de Tiroides y Paratiroides de la ACE sobre la declaración de hipoparatiroidismo.
 # Micrositio separado del espacio del panel (hipopara-ace-4m7k): no se enlazan entre sí.
-titulo: "Hipoparatiroidismo crónico: consulta a los socios de la ACE"
+titulo: "Hipoparatiroidismo crónico: consulta al Comité de Tiroides y Paratiroides de la ACE"
 subtitulo: Encuesta de respaldo a la declaración de posición sobre mal control y candidatura a reemplazo con PTH
 cliente: Asociación Colombiana de Endocrinología, Diabetes y Metabolismo (ACE)
 inicio: 2026-11
 fase: Diseño
 contacto: cbuiles@festinalente.cc
 pie_texto: >-
-  Escríbanos por correo o por WhatsApp. Este espacio es para los socios de la ACE;
-  por favor no comparta el enlace fuera de la asociación.
+  Escríbanos por correo o por WhatsApp. Este espacio es para los miembros del Comité de
+  Tiroides y Paratiroides de la ACE; por favor no comparta el enlace fuera del comité.
 mensaje: |-
-  Estimado(a) socio(a) de la ACE:
+  Estimado(a) miembro del Comité de Tiroides y Paratiroides de la ACE:
   Lo invitamos a opinar sobre la declaración de posición de la ACE sobre hipoparatiroidismo crónico y candidatura a reemplazo con PTH. Son 8 fichas breves y unos 10 minutos:
   {url}
   {plazo}
@@ -58,7 +58,7 @@ cronograma:
     hito: Aprobación del manuscrito por el panel
     estado: en-curso
   - fecha: 2026-12
-    hito: Encuesta a los socios de la ACE
+    hito: Encuesta al Comité de Tiroides y Paratiroides de la ACE
     estado: pendiente
   - fecha: 2027
     hito: Versión final con los resultados de la consulta y envío a la revista

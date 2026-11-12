@@ -1,5 +1,5 @@
 ---
-titulo: "Encuesta a los socios"
+titulo: "Encuesta al comité"
 orden: 1
 grupo: "Consulta"
 resumen: "Ocho fichas sobre la declaración de posición. Unos 10 minutos."
