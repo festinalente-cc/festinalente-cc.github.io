@@ -4,7 +4,7 @@ titulo: "Hipoparatiroidismo crónico: consulta al Comité de Tiroides y Paratiro
 subtitulo: Encuesta de respaldo a la declaración de posición sobre mal control y candidatura a reemplazo con PTH
 cliente: Asociación Colombiana de Endocrinología, Diabetes y Metabolismo (ACE)
 inicio: 2026-11
-fase: Diseño
+fase: Consulta abierta
 contacto: cbuiles@festinalente.cc
 pie_texto: >-
   Escríbanos por correo o por WhatsApp. Este espacio es para los miembros del Comité de
@@ -17,11 +17,13 @@ mensaje: |-
   Gracias por su aporte.
 
 ahora:
-  titulo: "Versión de prueba: por favor no responda todavía"
+  titulo: La encuesta está abierta
   texto: >-
-    Este espacio está en preparación. Cuando se abra la consulta, aquí encontrará
-    las instrucciones y el enlace a la encuesta.
-  # plazo: 2026-12-04
+    Son 8 fichas breves sobre la declaración de posición y unos 10 minutos.
+    Lea más abajo cómo se usarán sus respuestas y luego abra la encuesta.
+  plazo: 2026-11-26
+  enlace: 01-encuesta/
+  boton: Responder la encuesta
 
 equipo_titulo: Equipo coordinador
 equipo:
@@ -56,10 +58,10 @@ cronograma:
     estado: hecho
   - fecha: 2026-11
     hito: Aprobación del manuscrito por el panel
+    estado: hecho
+  - fecha: 2026-11
+    hito: Encuesta al Comité de Tiroides y Paratiroides de la ACE (12 al 26 de noviembre)
     estado: en-curso
-  - fecha: 2026-12
-    hito: Encuesta al Comité de Tiroides y Paratiroides de la ACE
-    estado: pendiente
   - fecha: 2027
     hito: Versión final con los resultados de la consulta y envío a la revista
     estado: pendiente

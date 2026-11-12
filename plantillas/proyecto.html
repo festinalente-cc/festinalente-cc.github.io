@@ -39,6 +39,7 @@
     {% if p.ahora.plazo %}<span class="plazo">Plazo: {{ p.ahora.plazo | fecha }}</span>{% endif %}
     <div class="hero-actions">
       {% if p.ahora.archivo %}<a class="hero-contact" href="documentos/{{ p.ahora.archivo }}">{{ p.ahora.boton or 'Abrir el documento' }}</a>{% endif %}
+      {% if p.ahora.enlace %}<a class="hero-contact" href="{{ p.ahora.enlace }}">{{ p.ahora.boton or 'Abrir' }}</a>{% endif %}
       <a class="hero-link" href="mailto:{{ p.contacto or sitio.correo }}">Enviar comentarios por correo</a>
       {% if sitio.whatsapp %}<a class="hero-link" href="{{ sitio.whatsapp }}" target="_blank" rel="noopener">Escribir por WhatsApp</a>{% endif %}
     </div>
