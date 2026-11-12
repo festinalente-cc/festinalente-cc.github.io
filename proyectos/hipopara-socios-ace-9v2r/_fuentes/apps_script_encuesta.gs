@@ -5,7 +5,8 @@
  *  1. Cree una hoja de Google nueva, p. ej. «Encuesta socios ACE – hipoparatiroidismo».
  *  2. Extensiones → Apps Script. Borre el contenido y pegue este archivo. Guarde.
  *  3. Ejecute una vez la función `preparar` (pide permisos) para crear las pestañas.
- *  4. Pegue en la pestaña «Directorio», columna A desde la fila 2, los correos de los socios.
+ *  4. Pegue en la pestaña «Directorio», desde la fila 2: columna A correo, columna B capítulo,
+ *     columna C categoría (adultos, pediatría o residente). B y C son opcionales.
  *     La hoja NO debe compartirse: contiene datos personales.
  *  5. Implementar → Nueva implementación → Tipo: Aplicación web.
  *     Ejecutar como: Yo. Quién tiene acceso: Cualquier persona. Implementar.
@@ -22,9 +23,9 @@ var HOJAS = { identidad: "Identidad", respuestas: "Respuestas", directorio: "Dir
 
 function preparar() {
   var ss = SpreadsheetApp.getActive();
-  hoja_(ss, HOJAS.identidad, ["id", "fecha", "nombre", "correo", "verificado_socio", "envio_previo", "agradecimientos", "consentimiento"]);
+  hoja_(ss, HOJAS.identidad, ["id", "fecha", "nombre", "correo", "verificado_socio", "capitulo_directorio", "categoria_directorio", "envio_previo", "agradecimientos", "consentimiento"]);
   hoja_(ss, HOJAS.respuestas, ["id", "fecha", "version"]);
-  hoja_(ss, HOJAS.directorio, ["correo"]);
+  hoja_(ss, HOJAS.directorio, ["correo", "capitulo", "categoria"]);
 }
 
 function doGet() {
@@ -48,12 +49,14 @@ function doPost(e) {
     var shI = ss.getSheetByName(HOJAS.identidad), shR = ss.getSheetByName(HOJAS.respuestas);
     var ahora = new Date();
 
-    var dir = ss.getSheetByName(HOJAS.directorio).getRange("A2:A").getValues()
-      .map(function (r) { return String(r[0]).trim().toLowerCase(); }).filter(String);
+    var shD = ss.getSheetByName(HOJAS.directorio);
+    var dir = shD.getLastRow() > 1 ? shD.getRange(2, 1, shD.getLastRow() - 1, 3).getValues() : [];
+    var socio = dir.filter(function (r) { return String(r[0]).trim().toLowerCase() === correo; })[0];
     var previos = shI.getLastRow() > 1 ? shI.getRange(2, 4, shI.getLastRow() - 1, 1).getValues()
       .filter(function (r) { return String(r[0]).toLowerCase() === correo; }).length : 0;
 
-    shI.appendRow([d.id, ahora, limpiar_(idt.nombre), correo, dir.indexOf(correo) >= 0 ? "si" : "no",
+    shI.appendRow([d.id, ahora, limpiar_(idt.nombre), correo, socio ? "si" : "no",
+                   socio ? limpiar_(socio[1]) : "", socio ? limpiar_(socio[2]) : "",
                    previos, idt.agradecimientos === "si" ? "si" : "no", "si"]);
 
     // Respuestas: una columna por campo; los campos nuevos se agregan al final del encabezado.
