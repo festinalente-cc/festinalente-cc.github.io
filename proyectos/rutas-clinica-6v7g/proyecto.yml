@@ -4,7 +4,7 @@ titulo: Traducción clínica de la confianza regulatoria en las rutas de autoriz
 subtitulo: Fase 2. Elicitación experta con un panel clínico, con los agonistas del receptor GLP-1 como casos trazadores. Material de trabajo del panel, ronda 1.
 codigo: RR-F2
 inicio: 2026-10
-fin_previsto: 2027-02
+fin_previsto: 2026-11
 fase: Ejecución
 
 equipo_titulo: Equipo del proyecto
@@ -17,18 +17,16 @@ equipo:
 # El panel no se publica: las calificaciones se identifican solo con un código (P01 a P05)
 # y la relación entre nombre y código la conoce únicamente la coordinación.
 
-# POR CONFIRMAR: enlace del formulario en KoboToolbox y fecha de cierre de la ronda 1.
 ahora:
-  titulo: Ronda 1 abierta
+  titulo: Ronda 1 abierta hasta el domingo 15 de noviembre
   texto: >-
     Lea primero la guía para el panel (páginas de este sitio o cuadernillo en PDF). Luego responda el cuestionario
     en KoboToolbox con el código de panelista que le enviamos por correo; puede guardar y continuar después.
     La guía de lectura del cuestionario le ayuda a entender qué pregunta cada ítem.
-  enlace: https://ee.kobotoolbox.org/x/POR-CONFIRMAR
+  enlace: https://ee.kobotoolbox.org/x/l11ENIfc
   boton: Abrir el cuestionario (KoboToolbox)
-  plazo: 2026-11-30
+  plazo: 2026-11-15
 
-# POR CONFIRMAR: fechas reales. Duración aprobada en el protocolo: unas 15 semanas.
 cronograma:
   - fecha: 2026-10
     hito: Protocolo aprobado, cuestionario piloteado y cuadernillo para el panel
@@ -36,20 +34,14 @@ cronograma:
   - fecha: 2026-10-29
     hito: "Cuadernillo versión 1.1: se agrega la guía de lectura del cuestionario a solicitud del panel"
     estado: hecho
-  - fecha: 2026-11
-    hito: Ronda 1 (calificación individual, a distancia)
+  - fecha: 2026-11-15
+    hito: Cierre de la ronda 1 (calificación individual, a distancia)
     estado: en-curso
-  - fecha: 2026-12
-    hito: Sesión sincrónica del panel (grupo nominal)
+  - fecha: 2026-11-23
+    hito: Reunión presencial del panel, lunes a las 4:00 p. m. (grupo nominal)
     estado: pendiente
-  - fecha: 2026-12
-    hito: Ronda 2 (recalificación con los resultados agregados de la ronda 1)
-    estado: pendiente
-  - fecha: 2027-01
-    hito: Análisis final y borrador de la guía de interpretación
-    estado: pendiente
-  - fecha: 2027-02
-    hito: Revisión de aplicabilidad y guía final
+  - fecha: 2026-11-30
+    hito: Cierre de la ronda 2 y de la fase 2
     estado: pendiente
 
 documentos:
