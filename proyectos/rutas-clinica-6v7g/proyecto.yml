@@ -1,0 +1,70 @@
+publicar: true
+
+titulo: Traducción clínica de la confianza regulatoria en las rutas de autorización de medicamentos en Colombia
+subtitulo: Fase 2. Elicitación experta con un panel clínico, con los agonistas del receptor GLP-1 como casos trazadores. Material de trabajo del panel, ronda 1.
+codigo: RR-F2
+inicio: 2026-10
+fin_previsto: 2027-02
+fase: Ejecución
+
+equipo_titulo: Equipo del proyecto
+equipo:
+  - nombre: Carlos E. Builes-Montaño, MD, PhD
+    rol: Investigador principal y dirección metodológica, Festina Lente
+  - nombre: Secretaría técnica Festina Lente
+    rol: Coordinación del panel, códigos de panelista y manejo de datos
+
+# El panel no se publica: las calificaciones se identifican solo con un código (P01 a P05)
+# y la relación entre nombre y código la conoce únicamente la coordinación.
+
+# POR CONFIRMAR: enlace del formulario en KoboToolbox y fecha de cierre de la ronda 1.
+ahora:
+  titulo: Ronda 1 abierta
+  texto: >-
+    Lea primero la guía para el panel (páginas de este sitio o cuadernillo en PDF). Luego responda el cuestionario
+    en KoboToolbox con el código de panelista que le enviamos por correo; puede guardar y continuar después.
+    La guía de lectura del cuestionario le ayuda a entender qué pregunta cada ítem.
+  enlace: https://ee.kobotoolbox.org/x/POR-CONFIRMAR
+  boton: Abrir el cuestionario (KoboToolbox)
+  plazo: 2026-11-30
+
+# POR CONFIRMAR: fechas reales. Duración aprobada en el protocolo: unas 15 semanas.
+cronograma:
+  - fecha: 2026-10
+    hito: Protocolo aprobado, cuestionario piloteado y cuadernillo para el panel
+    estado: hecho
+  - fecha: 2026-10-29
+    hito: "Cuadernillo versión 1.1: se agrega la guía de lectura del cuestionario a solicitud del panel"
+    estado: hecho
+  - fecha: 2026-11
+    hito: Ronda 1 (calificación individual, a distancia)
+    estado: en-curso
+  - fecha: 2026-12
+    hito: Sesión sincrónica del panel (grupo nominal)
+    estado: pendiente
+  - fecha: 2026-12
+    hito: Ronda 2 (recalificación con los resultados agregados de la ronda 1)
+    estado: pendiente
+  - fecha: 2027-01
+    hito: Análisis final y borrador de la guía de interpretación
+    estado: pendiente
+  - fecha: 2027-02
+    hito: Revisión de aplicabilidad y guía final
+    estado: pendiente
+
+documentos:
+  - archivo: Cuadernillo_panelistas_v1.1.pdf
+    titulo: Cuadernillo para panelistas, versión 1.1 (PDF)
+    descripcion: El mismo contenido de las páginas de este sitio, para leer sin conexión o imprimir. Incluye el anexo con la guía de lectura del cuestionario.
+
+novedades:
+  - fecha: 2026-11-13
+    texto: Se publica este espacio de trabajo del panel, con la guía en páginas y el cuadernillo en PDF.
+  - fecha: 2026-10-29
+    texto: Cuadernillo versión 1.1, con la guía de lectura del cuestionario que pidió el panel. El cuestionario no cambió.
+
+contacto: cbuiles@festinalente.cc
+
+pie_texto: >-
+  Escríbanos por correo o por WhatsApp. Esta página y sus materiales son confidenciales y de uso exclusivo del panel:
+  por favor no comparta el enlace.
