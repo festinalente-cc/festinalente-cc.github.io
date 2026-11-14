@@ -57,7 +57,7 @@ cronograma:
 documentos:
   - archivo: Fichas_evidencia_EOT.pdf
     titulo: Fichas de evidencia (PDF)
-    descripcion: Versión 1.1 (8 de noviembre). Las 19 fichas en un solo documento, para leer sin conexión o imprimir; el contenido es el mismo de las páginas P01 a P19.
+    descripcion: Versión 1.2 (14 de noviembre). Las 19 fichas en un solo documento, para leer sin conexión o imprimir; el contenido es el mismo de las páginas P01 a P19.
   - archivo: Anexo_tecnico_evidencia_por_pregunta_EOT.xlsx
     titulo: Anexo técnico (Excel)
     descripcion: Una hoja por pregunta con cada fuente, su calidad, las recomendaciones y los resultados, con la cita textual, la página y la línea.
@@ -69,6 +69,8 @@ documentos:
     descripcion: La misma lista en formato de hoja de cálculo.
 
 novedades:
+  - fecha: 2026-11-14
+    texto: Fichas versión 1.2 y anexo técnico actualizados. En P07 se aclara que la encuesta de Villagelin 2025 [0073] compara Latinoamérica con el conjunto de las demás regiones, no con Europa.
   - fecha: 2026-11-08
     texto: Se abre la ronda 1. Plazo para responder, sábado 21 de noviembre.
 
