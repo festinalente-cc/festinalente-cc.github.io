@@ -45,7 +45,7 @@ ahora:
     Lea el borrador del informe y responda el formulario de validación: seis preguntas, unos 5 minutos.
     En cada punto basta con decir si el texto refleja su opinión, si la refleja con cambios o si no la refleja.
     El borrador completo, con membrete de la ACE, está en documentos.
-  plazo: 2026-11-25
+  plazo: 2026-11-22
   enlace: validacion/
   boton: Responder la validación
 
@@ -72,10 +72,10 @@ cronograma:
     hito: "Formulario de cierre: semáforos (7 de 7), votos para EMC, drivers e investigación (6 de 7)"
     estado: hecho
   - fecha: 2026-11-21
-    hito: Borrador del informe y preguntas para validar, en revisión por el panel hasta el 25 de noviembre
+    hito: Borrador del informe y formulario de validación, en revisión por el panel hasta el 22 de noviembre
     estado: en-curso
-  - fecha: 2026-11-27
-    hito: Informe final para la ACE y su aliado estratégico, después de la revisión del panel (fecha por confirmar)
+  - fecha: 2026-11-23
+    hito: Informe final para la ACE y su aliado estratégico, después de la revisión del panel
     estado: pendiente
 
 documentos:
@@ -94,7 +94,7 @@ documentos:
 
 novedades:
   - fecha: 2026-11-21
-    texto: Se publica el borrador del informe con los resultados de la sesión y el formulario de validación. Plazo para responder, 25 de noviembre.
+    texto: Se publica el borrador del informe con los resultados de la sesión y el formulario de validación. Plazo para responder, 22 de noviembre.
   - fecha: 2026-11-08
     texto: Se publica la prelectura con las 14 fichas de evidencia y los resultados del formulario del panel.
 
