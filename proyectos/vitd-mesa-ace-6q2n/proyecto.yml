@@ -3,7 +3,7 @@ publicar: true
 titulo: Mesa de expertos sobre la formulación de vitamina D
 subtitulo: >-
   Lo que respondió el panel frente a lo que muestra la evidencia, en 14 temas más allá del hueso.
-  Material de prelectura para la sesión presencial del 13 de noviembre.
+  Borrador del informe en revisión por el panel.
 cliente: Asociación Colombiana de Endocrinología, Diabetes y Metabolismo (ACE)
 codigo: VITD-2026
 inicio: 2026-10
@@ -40,12 +40,12 @@ panelistas:
     ciudad: Medellín
 
 ahora:
-  titulo: Prelectura para la sesión del 13 de noviembre
+  titulo: Revisión del borrador del informe
   texto: >-
-    Empiece por el resumen de los 14 temas y la página con lo que respondió el panel. Luego lea las fichas de los
-    temas que más le interesen y las cinco preguntas para la sesión. No hay que responder nada: la discusión es
-    presencial. Si prefiere leer sin conexión, descargue las fichas en PDF.
-  plazo: 2026-11-13
+    Lea el borrador del informe y responda las cinco preguntas para validar, en la sección «Después de la sesión».
+    Para cada una basta con decir si refleja su opinión, si la refleja con cambios o si no la refleja. Puede responder
+    por WhatsApp o por correo. El borrador completo, con membrete de la ACE, está en documentos.
+  plazo: 2026-11-25
 
 cronograma:
   - fecha: 2026-10-26
@@ -62,18 +62,24 @@ cronograma:
     estado: hecho
   - fecha: 2026-11-08
     hito: Prelectura disponible en este sitio
-    estado: en-curso
+    estado: hecho
   - fecha: 2026-11-13
     hito: Sesión presencial de la mesa
-    estado: pendiente
-  - fecha: 2026-11-14
-    hito: Segunda ronda virtual asincrónica de síntesis, del 14 al 19 de noviembre (fecha por confirmar en la sesión)
-    estado: pendiente
-  - fecha: 2026-11-23
-    hito: Informe final para la ACE (fecha por confirmar en la sesión)
+    estado: hecho
+  - fecha: 2026-11-17
+    hito: "Formulario de cierre: semáforos (7 de 7), votos para EMC, drivers e investigación (6 de 7)"
+    estado: hecho
+  - fecha: 2026-11-21
+    hito: Borrador del informe y preguntas para validar, en revisión por el panel hasta el 25 de noviembre
+    estado: en-curso
+  - fecha: 2026-11-27
+    hito: Informe final para la ACE y su aliado estratégico, después de la revisión del panel (fecha por confirmar)
     estado: pendiente
 
 documentos:
+  - archivo: Borrador_informe_mesa_vitD.pdf
+    titulo: Borrador del informe (PDF)
+    descripcion: Versión para revisión del panel (21 de noviembre). Resultados por tema, mensajes por eje, mapa de drivers, agenda de investigación y propuesta de currículo de EMC. Los cinco puntos para validar están marcados en el texto.
   - archivo: Fichas_evidencia_vitD.pdf
     titulo: Fichas de evidencia (PDF)
     descripcion: Versión 1.0 (8 de noviembre). El resumen, los resultados del panel, las 14 fichas, las preguntas para la sesión y las referencias en un solo documento, para leer sin conexión o imprimir.
@@ -85,6 +91,8 @@ documentos:
     descripcion: Los 74 estudios del corpus, por código, con DOI, PubMed, tipo de estudio, calidad y temas a los que aportan.
 
 novedades:
+  - fecha: 2026-11-21
+    texto: Se publica el borrador del informe con los resultados de la sesión y cinco preguntas para validar. Plazo para responder, 25 de noviembre.
   - fecha: 2026-11-08
     texto: Se publica la prelectura con las 14 fichas de evidencia y los resultados del formulario del panel.
 

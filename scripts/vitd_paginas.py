@@ -22,8 +22,10 @@ PROY = RAIZ / "proyectos" / slug
 FUENTES = PROY / "_fuentes"
 SALIDA = PROY / "paginas"
 SALIDA.mkdir(exist_ok=True)
+MANUALES = {"informe.md", "validacion.md"}  # páginas escritas a mano después de la sesión: no se regeneran
 for viejo in SALIDA.glob("*.md"):
-    viejo.unlink()
+    if viejo.name not in MANUALES:
+        viejo.unlink()
 
 texto = (FUENTES / "fichas.md").read_text(encoding="utf-8")
 texto = texto.replace("\\[", "[").replace("\\]", "]")
