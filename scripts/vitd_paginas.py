@@ -6,7 +6,7 @@ Lee, en proyectos/<slug>/_fuentes/:
               '## Cómo leer las fichas', '## Resumen', '## Eje N. ...' con '### Tn. Título – Semáforo',
               '## Preguntas para la sesión ...' y '## Método y referencias' (tabla Código | Referencia | Calidad)
   panel.md    texto de la página «Lo que respondió el panel» (figuras en documentos/figuras/)
-y escribe proyectos/<slug>/paginas/*.md. Volver a correrlo sobrescribe las páginas generadas.
+y escribe proyectos/<slug>/_prelectura/*.md (fase cerrada, fuera del sitio). Volver a correrlo sobrescribe las páginas generadas.
 
 Uso:  python scripts/vitd_paginas.py vitd-mesa-ace-6q2n
 """
@@ -20,9 +20,9 @@ RAIZ = Path(__file__).resolve().parent.parent
 slug = sys.argv[1] if len(sys.argv) > 1 else "vitd-mesa-ace-6q2n"
 PROY = RAIZ / "proyectos" / slug
 FUENTES = PROY / "_fuentes"
-SALIDA = PROY / "paginas"
+SALIDA = PROY / "_prelectura"  # fase de prelectura (cerrada): no se publica; pasar a paginas/ para volver a mostrarla
 SALIDA.mkdir(exist_ok=True)
-MANUALES = {"informe.md", "validacion.md"}  # páginas escritas a mano después de la sesión: no se regeneran
+MANUALES = set()
 for viejo in SALIDA.glob("*.md"):
     if viejo.name not in MANUALES:
         viejo.unlink()

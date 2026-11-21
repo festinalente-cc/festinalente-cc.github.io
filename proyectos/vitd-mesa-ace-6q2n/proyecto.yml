@@ -2,8 +2,7 @@ publicar: true
 
 titulo: Mesa de expertos sobre la formulación de vitamina D
 subtitulo: >-
-  Lo que respondió el panel frente a lo que muestra la evidencia, en 14 temas más allá del hueso.
-  Borrador del informe en revisión por el panel.
+  Borrador del informe en revisión por el panel. Plazo para validar: domingo 22 de noviembre.
 cliente: Asociación Colombiana de Endocrinología, Diabetes y Metabolismo (ACE)
 codigo: VITD-2026
 inicio: 2026-10
@@ -50,47 +49,29 @@ ahora:
   boton: Responder la validación
 
 cronograma:
-  - fecha: 2026-10-26
-    hito: Firma del acta de inicio
-    estado: hecho
-  - fecha: 2026-10-28
-    hito: Envío del formulario individual al panel
-    estado: hecho
-  - fecha: 2026-11-04
-    hito: Cierre del formulario (6 de 7 respuestas)
-    estado: hecho
   - fecha: 2026-11-08
-    hito: "Análisis de respuestas y contraste con la literatura: 74 estudios en 14 temas, con evaluación de calidad"
-    estado: hecho
-  - fecha: 2026-11-08
-    hito: Prelectura disponible en este sitio
+    hito: Formulario individual, contraste con la literatura (74 estudios, 14 temas) y prelectura
     estado: hecho
   - fecha: 2026-11-13
     hito: Sesión presencial de la mesa
     estado: hecho
   - fecha: 2026-11-17
-    hito: "Formulario de cierre: semáforos (7 de 7), votos para EMC, drivers e investigación (6 de 7)"
+    hito: "Formulario de cierre: semáforos, votos para EMC, drivers e investigación"
     estado: hecho
   - fecha: 2026-11-21
     hito: Borrador del informe y formulario de validación, en revisión por el panel hasta el 22 de noviembre
     estado: en-curso
   - fecha: 2026-11-23
-    hito: Informe final para la ACE y su aliado estratégico, después de la revisión del panel
+    hito: Informe final para la ACE y su aliado estratégico
     estado: pendiente
 
 documentos:
   - archivo: Borrador_informe_mesa_vitD.pdf
     titulo: Borrador del informe (PDF)
-    descripcion: Versión para revisión del panel (21 de noviembre). Resultados por tema, mensajes por eje, mapa de drivers, agenda de investigación y propuesta de currículo de EMC. Los cinco puntos para validar están marcados en el texto.
+    descripcion: Versión para revisión del panel (21 de noviembre), con membrete de la ACE. Los cinco puntos para validar están marcados en el texto.
   - archivo: Fichas_evidencia_vitD.pdf
-    titulo: Fichas de evidencia (PDF)
-    descripcion: Versión 1.0 (8 de noviembre). El resumen, los resultados del panel, las 14 fichas, las preguntas para la sesión y las referencias en un solo documento, para leer sin conexión o imprimir.
-  - archivo: Anexo_tecnico_evidencia_por_tema_vitD.xlsx
-    titulo: Anexo técnico (Excel)
-    descripcion: Una hoja por tema con cada estudio, su diseño, su calidad y sus resultados, con la cita textual del artículo de donde sale cada cifra.
-  - archivo: Referencias_incluidas_vitD.xlsx
-    titulo: Referencias incluidas (Excel)
-    descripcion: Los 74 estudios del corpus, por código, con DOI, PubMed, tipo de estudio, calidad y temas a los que aportan.
+    titulo: Fichas de evidencia de la prelectura (PDF)
+    descripcion: Material de la sesión, como referencia. Las 14 fichas con el detalle de la evidencia de cada tema.
 
 novedades:
   - fecha: 2026-11-21

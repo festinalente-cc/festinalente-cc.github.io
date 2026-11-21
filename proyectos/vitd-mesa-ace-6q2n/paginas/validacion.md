@@ -1,7 +1,7 @@
 ---
 titulo: "Preguntas para validar"
 orden: 31
-grupo: "Después de la sesión"
+grupo: "Revisión del informe"
 resumen: "Seis preguntas para cerrar el informe: cinco puntos del borrador y la declaración de conflictos de interés. Unos 5 minutos."
 estilos: [validacion.css]
 scripts: [validacion.js]
