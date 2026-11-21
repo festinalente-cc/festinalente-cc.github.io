@@ -10,6 +10,6 @@ Con estas preguntas se cierra la revisión del [borrador del informe](../informe
 
 <div class="py-aviso">Plazo para responder: miércoles 25 de noviembre de 2026. Los puntos sin acuerdo se reportarán como abiertos, con las posiciones minoritarias, sin rondas adicionales. Si quiere cambiar una respuesta, vuelva a enviar el formulario: se toma el último envío.</div>
 
-<div id="enc-raiz" data-endpoint="" data-version="2026-11-21"></div>
+<div id="enc-raiz" data-endpoint="https://script.google.com/macros/s/AKfycbxNvddLvVcdPGAQMeAodrW5lVEeEOuQSnYENIRx3aAv3NkE1uML5pz1z1pw2F44BqQCfw/exec" data-version="2026-11-21"></div>
 
 <noscript><p><strong>Este formulario necesita JavaScript.</strong> Si no puede activarlo, escríbanos a cbuiles@festinalente.cc.</p></noscript>
