@@ -4,7 +4,7 @@ orden: 30
 grupo: "Después de la sesión"
 resumen: "Documento de hallazgos de la mesa, para revisión del panel antes de entregarlo a la ACE."
 ---
-<div class="py-aviso">Borrador para revisión del panel, 21 de noviembre de 2026. Los mensajes expresan puntos de vista y opiniones del panel contrastados con la literatura; no son recomendaciones de práctica clínica. Cinco puntos están marcados <strong>para validar</strong>: las preguntas están en la <a href="../validacion/">página siguiente</a>. El documento completo, con membrete de la ACE, está en la sección de documentos.</div>
+<div class="py-aviso">Borrador para revisión del panel, 21 de noviembre de 2026. Los mensajes expresan puntos de vista y opiniones del panel contrastados con la literatura; no son recomendaciones de práctica clínica. Cinco puntos están marcados <strong>para validar</strong>: se responden en el formulario de la <a href="../validacion/">página siguiente</a>. El documento completo, con membrete de la ACE, está en la sección de documentos.</div>
 
 ## Resumen ejecutivo
 

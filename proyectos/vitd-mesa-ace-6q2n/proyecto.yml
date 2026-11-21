@@ -42,10 +42,12 @@ panelistas:
 ahora:
   titulo: Revisión del borrador del informe
   texto: >-
-    Lea el borrador del informe y responda las cinco preguntas para validar, en la sección «Después de la sesión».
-    Para cada una basta con decir si refleja su opinión, si la refleja con cambios o si no la refleja. Puede responder
-    por WhatsApp o por correo. El borrador completo, con membrete de la ACE, está en documentos.
+    Lea el borrador del informe y responda el formulario de validación: seis preguntas, unos 5 minutos.
+    En cada punto basta con decir si el texto refleja su opinión, si la refleja con cambios o si no la refleja.
+    El borrador completo, con membrete de la ACE, está en documentos.
   plazo: 2026-11-25
+  enlace: validacion/
+  boton: Responder la validación
 
 cronograma:
   - fecha: 2026-10-26
@@ -92,7 +94,7 @@ documentos:
 
 novedades:
   - fecha: 2026-11-21
-    texto: Se publica el borrador del informe con los resultados de la sesión y cinco preguntas para validar. Plazo para responder, 25 de noviembre.
+    texto: Se publica el borrador del informe con los resultados de la sesión y el formulario de validación. Plazo para responder, 25 de noviembre.
   - fecha: 2026-11-08
     texto: Se publica la prelectura con las 14 fichas de evidencia y los resultados del formulario del panel.
 

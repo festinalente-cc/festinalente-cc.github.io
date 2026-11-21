@@ -19,7 +19,7 @@ Del 14 al 19 de noviembre sigue una ronda virtual asincrónica en la que cada pa
 
 ## Después de la sesión
 
-La sesión del 13 de noviembre confirmó el semáforo de los 14 temas. En un formulario de cierre, cada panelista registró su acuerdo con cada semáforo, distribuyó cinco votos para la educación médica continuada y calificó las propuestas de investigación. Con eso y con la discusión se preparó el [borrador del informe](informe/). Cinco puntos necesitan la opinión de cada panelista: están en [preguntas para validar](validacion/). Esta revisión reemplaza la ronda virtual prevista; después, el informe se entrega a la ACE y a su aliado estratégico.
+La sesión del 13 de noviembre confirmó el semáforo de los 14 temas. En un formulario de cierre, cada panelista registró su acuerdo con cada semáforo, distribuyó cinco votos para la educación médica continuada y calificó las propuestas de investigación. Con eso y con la discusión se preparó el [borrador del informe](informe/). Cinco puntos necesitan la opinión de cada panelista y se responden, junto con la declaración de conflictos de interés, en el [formulario de validación](validacion/). Esta revisión reemplaza la ronda virtual prevista; después, el informe se entrega a la ACE y a su aliado estratégico.
 
 ## Antes de leer
 
