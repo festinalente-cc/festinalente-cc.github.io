@@ -18,10 +18,10 @@ equipo:
 # y la relación entre nombre y código la conoce únicamente la coordinación.
 
 ahora:
-  titulo: Reunión del panel, hoy a las 4:00 p. m.
+  titulo: Ronda 2 abierta hasta el lunes 30 de noviembre
   texto: >-
-    La ronda 1 cerró. Aquí está la presentación de la reunión con el resultado agregado de cada ítem; nadie ve
-    calificaciones individuales. Después de la reunión se abre la ronda 2, hasta el lunes 30 de noviembre.
+    En la reunión del 23 de noviembre el panel decidió recalificar solo los 19 ítems que quedaron indeterminados en la ronda 1.
+    Los demás conservan su resultado. Use el mismo código de panelista; su calificación de la ronda 1 está en su cuadernillo individual.
   archivo: Resultados_ronda1_reunion.pdf
   boton: Ver la presentación de resultados (PDF)
 
@@ -36,11 +36,11 @@ cronograma:
     hito: Cierre de la ronda 1 (calificación individual, a distancia)
     estado: hecho
   - fecha: 2026-11-23
-    hito: Reunión presencial del panel, lunes a las 4:00 p. m. (grupo nominal)
-    estado: en-curso
+    hito: Reunión presencial del panel (grupo nominal); el panel decide recalificar solo los ítems indeterminados
+    estado: hecho
   - fecha: 2026-11-30
-    hito: Cierre de la ronda 2 y de la fase 2
-    estado: pendiente
+    hito: Cierre de la ronda 2 (19 ítems) y de la fase 2
+    estado: en-curso
 
 documentos:
   - archivo: Resultados_ronda1_reunion.pdf
@@ -51,6 +51,8 @@ documentos:
     descripcion: El mismo contenido de las páginas de este sitio, para leer sin conexión o imprimir. Incluye el anexo con la guía de lectura del cuestionario.
 
 novedades:
+  - fecha: 2026-11-23
+    texto: "El panel decidió en la reunión recalificar en la ronda 2 solo los 19 ítems indeterminados de la ronda 1."
   - fecha: 2026-11-23
     texto: Se publica la presentación de resultados de la ronda 1 para la reunión del panel.
   - fecha: 2026-11-13
