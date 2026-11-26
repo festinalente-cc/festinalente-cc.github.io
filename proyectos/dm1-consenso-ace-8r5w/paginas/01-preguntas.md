@@ -72,7 +72,7 @@ Estas preguntas organizan la revisión de la evidencia y cada una tendrá su fic
 ## Qué pide el formulario
 
 1. **Datos para la publicación:** nombre y forma de citación, títulos, afiliación, ciudad y ORCID; su perspectiva en el panel y su experiencia. El correo une sus respuestas de las rondas y no se publica.
-2. **Conflictos de interés:** vínculos de los últimos 36 meses, uno por uno, con la empresa, el tipo de vínculo, quién lo recibió, los productos relacionados y si está vigente o fue en los últimos 12 meses. Ese detalle es el que permite el análisis de sensibilidad por afirmación. Declarar no excluye ni impide votar.
+2. **Conflictos de interés:** vínculos de los últimos 36 meses, uno por uno, con la empresa, el tipo de vínculo, quién lo recibió, los productos relacionados y si está vigente o fue en los últimos 12 meses. Ese detalle permite el análisis de sensibilidad por afirmación: el principal con los vínculos personales y uno secundario que suma los institucionales. Declarar no excluye ni impide votar.
 3. **Comentarios a las preguntas:** opcionales, por pregunta, más temas faltantes y referencias que sugiera revisar.
 4. **Consentimiento:** participación, publicación de su nombre y su declaración, criterios de autoría del ICMJE y confidencialidad.
 

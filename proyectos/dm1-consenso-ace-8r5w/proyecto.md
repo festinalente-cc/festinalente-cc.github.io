@@ -81,6 +81,8 @@ Un comité de tres personas sin conflictos identifica, con la Guía Metodológic
 | Cambia en la ronda 2 | Se publican ambos resultados, con la nota de que el acuerdo depende de panelistas con conflicto |
 | Sin esos votos queda menos del 80% del panel | Se informa que el análisis no fue posible |
 
+**Análisis secundario.** Como los pagos a la institución también pueden pesar (por ejemplo, un programa o un estudio financiado por un fabricante en el hospital del panelista), cada afirmación se calcula además sin quienes tienen un interés institucional específico: un pago a su institución en los últimos 12 meses relacionado con el producto de la afirmación. Se reporta junto al análisis principal y no cambia sus reglas.
+
 Ningún financiador participa en la redacción ni en la aprobación. La industria no participa en ninguna fase ni accede a borradores o votos.
 
 ## Confidencialidad
