@@ -3,7 +3,7 @@ titulo: "Preguntas del consenso y registro"
 orden: 1
 grupo: "Antes de la ronda 1"
 resumen: "Las 22 preguntas que definen el alcance, y el formulario para sus datos, sus conflictos de interés y sus comentarios."
-# formulario: "https://ee.kobotoolbox.org/i/XXXX"  (agregar al desplegar en Kobo)
+formulario: "https://ee.kobotoolbox.org/i/Br7f4FWo"
 formulario_titulo: "Formulario de registro"
 formulario_texto: "Se responde una sola vez. Si necesita corregir algo, escríbanos o envíelo de nuevo: se toma el último envío."
 ---
@@ -74,6 +74,4 @@ Estas preguntas organizan la revisión de la evidencia y cada una tendrá su fic
 1. **Datos para la publicación:** nombre y forma de citación, títulos, afiliación, ciudad y ORCID; su perspectiva en el panel y su experiencia. El correo une sus respuestas de las rondas y no se publica.
 2. **Conflictos de interés:** vínculos de los últimos 36 meses, uno por uno, con la empresa, el tipo de vínculo, quién lo recibió, los productos relacionados y si está vigente o fue en los últimos 12 meses. Ese detalle permite el análisis de sensibilidad por afirmación: el principal con los vínculos personales y uno secundario que suma los institucionales. Declarar no excluye ni impide votar.
 3. **Comentarios a las preguntas:** opcionales, por pregunta, más temas faltantes y referencias que sugiera revisar.
-4. **Consentimiento:** participación, publicación de su nombre y su declaración, criterios de autoría del ICMJE y confidencialidad.
-
-<div class="py-aviso" id="formulario">El formulario se habilitará en esta página en los próximos días. Le avisaremos por correo.</div>
+4. **Consentimiento:** participación, publicación de su nombre y su declaración, criterios de autoría del ICMJE, tratamiento de sus datos personales (Ley 1581 de 2012) y confidencialidad.

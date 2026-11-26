@@ -87,4 +87,4 @@ Ningún financiador participa en la redacción ni en la aprobación. La industri
 
 ## Confidencialidad
 
-Las calificaciones son anónimas para el grupo. Solo la secretaría técnica conoce la identidad de cada respuesta, a través del correo electrónico. Los materiales de este sitio son de uso exclusivo del panel hasta la publicación: no comparta el enlace.
+Las calificaciones son anónimas para el grupo. Solo la secretaría técnica conoce la identidad de cada respuesta, a través del correo electrónico. Sus datos personales se tratan conforme a la Ley 1581 de 2012, solo para fines del consenso, y no se comparten con la industria. Los materiales de este sitio son de uso exclusivo del panel hasta la publicación: no comparta el enlace.
