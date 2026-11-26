@@ -21,9 +21,10 @@ ahora:
   titulo: Ronda 2 abierta hasta el lunes 30 de noviembre
   texto: >-
     En la reunión del 23 de noviembre el panel decidió recalificar solo los 19 ítems que quedaron indeterminados en la ronda 1.
-    Los demás conservan su resultado. Use el mismo código de panelista; su calificación de la ronda 1 está en su cuadernillo individual.
-  archivo: Resultados_ronda1_reunion.pdf
-  boton: Ver la presentación de resultados (PDF)
+    Los demás conservan su resultado. Antes de calificar, lea la relatoría de la reunión: resume los argumentos de cada ítem y aclara cómo leer los que se entendieron de dos maneras.
+    Use el mismo código de panelista; su calificación de la ronda 1 está en su cuadernillo individual.
+  archivo: Relatoria_reunion_23nov.pdf
+  boton: Leer la relatoría de la reunión (PDF)
 
 cronograma:
   - fecha: 2026-10
@@ -43,6 +44,9 @@ cronograma:
     estado: en-curso
 
 documentos:
+  - archivo: Relatoria_reunion_23nov.pdf
+    titulo: Relatoría de la reunión del 23 de noviembre (PDF)
+    descripcion: Argumentos del panel en cada uno de los 19 ítems que se recalifican, con aclaraciones de lectura. Anónima, sin atribuciones.
   - archivo: Resultados_ronda1_reunion.pdf
     titulo: Resultados de la ronda 1 · presentación de la reunión (PDF)
     descripcion: Resultado agregado de los 45 ítems, una diapositiva por ítem, y los nueve ítems priorizados para la discusión.
@@ -51,6 +55,8 @@ documentos:
     descripcion: El mismo contenido de las páginas de este sitio, para leer sin conexión o imprimir. Incluye el anexo con la guía de lectura del cuestionario.
 
 novedades:
+  - fecha: 2026-11-27
+    texto: Se publica la relatoría de la reunión del panel, para leer antes de calificar la ronda 2.
   - fecha: 2026-11-23
     texto: "El panel decidió en la reunión recalificar en la ronda 2 solo los 19 ítems indeterminados de la ronda 1."
   - fecha: 2026-11-23

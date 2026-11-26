@@ -25,7 +25,7 @@ Si tiene una duda que la guía no resuelve, escríbanos. Las respuestas se enví
 | Reunión presencial, lunes 23 de noviembre, 4:00 p. m. | Discute los ítems con más dispersión o con resultado incierto; puede proponer ítems nuevos. | Los resultados agregados del grupo, nunca las calificaciones individuales. |
 | Ronda 2, hasta el lunes 30 de noviembre | Vuelve a calificar solo los 19 ítems indeterminados de la ronda 1; puede mantener o cambiar su calificación. | El resultado agregado de la ronda 1 y la relatoría de la reunión. |
 
-Con la ronda 2 termina la fase 2; después vienen el análisis y la guía de interpretación para clínicos y comités. Los manuscritos de la fase 1 se compartirán al cerrar la ronda 1, para que su calificación sea independiente de los resultados de los químicos farmacéuticos.
+Con la ronda 2 termina la fase 2; después vienen el análisis y la guía de interpretación para clínicos y comités. Los manuscritos de la fase 1 se compartirán después de la ronda 2, para que su calificación sea independiente de los resultados de los químicos farmacéuticos.
 
 ## Anonimato y financiación
 
