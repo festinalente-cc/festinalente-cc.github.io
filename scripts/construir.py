@@ -202,7 +202,7 @@ def main() -> int:
         p.setdefault("actualizado", fecha_git(carpeta))
 
         # Subpáginas: proyectos/<slug>/paginas/<nombre>.md con encabezado YAML
-        # (titulo, orden, grupo, resumen, formulario, estilos, scripts). Se publican en /p/<slug>/<nombre>/.
+        # (titulo, orden, grupo, resumen, formulario, formulario_titulo, formulario_texto, estilos, scripts). Se publican en /p/<slug>/<nombre>/.
         paginas = []
         carpeta_pag = carpeta / "paginas"
         if carpeta_pag.exists():
@@ -213,6 +213,7 @@ def main() -> int:
                     nombre=archivo.stem, titulo=meta.get("titulo", archivo.stem),
                     orden=meta.get("orden", 999), grupo=meta.get("grupo", ""),
                     resumen=meta.get("resumen", ""), formulario=meta.get("formulario"),
+                    formulario_titulo=meta.get("formulario_titulo"), formulario_texto=meta.get("formulario_texto"),
                     estilos=meta.get("estilos") or [], scripts=meta.get("scripts") or [],
                     html=md.convert(texto)))
             paginas.sort(key=lambda x: (x["orden"], x["nombre"]))

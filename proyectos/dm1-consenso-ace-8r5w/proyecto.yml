@@ -1,0 +1,66 @@
+publicar: true
+
+titulo: Consenso colombiano de expertos en diabetes tipo 1
+subtitulo: Tecnología, análogos de insulina y vacunación en adultos. Espacio de trabajo del panel.
+cliente: Asociación Colombiana de Endocrinología, Diabetes y Metabolismo (ACE)
+codigo: DM1-2026
+inicio: 2026-10
+fin_previsto: 2027-03
+fase: Ejecución
+
+equipo_titulo: Equipo del proyecto
+equipo:
+  - nombre: Alex Ramírez-Rincón
+    rol: Coordinación científica, ACE
+  - nombre: Carlos E. Builes-Montaño, MD, PhD
+    rol: Coordinación metodológica, Festina Lente
+  - nombre: Secretaría técnica Festina Lente
+    rol: Coordinación del panel, revisión de la evidencia y manejo de datos
+
+# El panel se publicará con nombre, afiliación y ciudad cuando esté confirmado.
+# En la ronda 1 las calificaciones son anónimas para el grupo.
+
+ahora:
+  titulo: Registro, conflictos de interés y comentarios a las preguntas
+  texto: >-
+    Lea las 22 preguntas del consenso y complete el formulario: sus datos para la publicación, su declaración de
+    conflictos de interés, sus comentarios a las preguntas y su consentimiento. Se responde una sola vez y toma unos 15 minutos.
+  enlace: 01-preguntas/
+  boton: Ver las preguntas y responder
+
+cronograma:
+  - fecha: 2026-10-20
+    hito: Inicio formal del proyecto
+    estado: hecho
+  - fecha: 2026-11-22
+    hito: Protocolo registrado en OSF (doi:10.17605/OSF.IO/2SDZY) y búsqueda en PubMed, Embase y LILACS
+    estado: hecho
+  - fecha: 2026-11
+    hito: Reunión de inicio del panel; registro, conflictos de interés y comentarios a las preguntas
+    estado: en-curso
+  - fecha: 2026-12-24
+    hito: Fichas de evidencia listas
+    estado: pendiente
+  - fecha: 2026-12-28
+    hito: Inicio de la ronda 1 (calificación individual, a distancia), abierta hasta el 15 de enero
+    estado: pendiente
+  - fecha: 2027-01-23
+    hito: Reunión presencial del panel y ronda 2
+    estado: pendiente
+  - fecha: 2027-01-29
+    hito: Matriz final de afirmaciones
+    estado: pendiente
+  - fecha: 2027-03-12
+    hito: Manuscrito revisado por el panel y listo para someter (ACCORD)
+    estado: pendiente
+
+documentos:
+  - archivo: Presentacion_reunion_inicio_panel.pdf
+    titulo: Presentación de la reunión de inicio (PDF)
+    descripcion: Alcance, método, avance, cronograma, autoría y manejo de conflictos de interés.
+
+novedades:
+  - fecha: 2026-11-25
+    texto: Se abre el formulario de registro, conflictos de interés y comentarios a las preguntas.
+
+contacto: cbuiles@festinalente.cc

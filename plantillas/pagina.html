@@ -25,8 +25,8 @@
     {{ pg.html | safe }}
     {% if pg.formulario %}
     <div class="py-form" id="formulario">
-      <h2>Calificación</h2>
-      <p>Responda aquí mismo o <a href="{{ pg.formulario }}" target="_blank" rel="noopener">abra el formulario en otra pestaña</a>. Use el mismo correo que en el registro.</p>
+      <h2>{{ pg.formulario_titulo or 'Calificación' }}</h2>
+      <p>Responda aquí mismo o <a href="{{ pg.formulario }}" target="_blank" rel="noopener">abra el formulario en otra pestaña</a>. {{ pg.formulario_texto or 'Use el mismo correo que en el registro.' }}</p>
       <iframe src="{{ pg.formulario }}" title="Formulario: {{ pg.titulo }}" loading="lazy" allow="geolocation"></iframe>
     </div>
     {% endif %}
