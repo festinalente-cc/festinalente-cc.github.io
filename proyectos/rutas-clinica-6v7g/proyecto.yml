@@ -22,9 +22,12 @@ ahora:
   texto: >-
     En la reunión del 23 de noviembre el panel decidió recalificar solo los 19 ítems que quedaron indeterminados en la ronda 1.
     Los demás conservan su resultado. Antes de calificar, lea la relatoría de la reunión: resume los argumentos de cada ítem y aclara cómo leer los que se entendieron de dos maneras.
-    Use el mismo código de panelista; su calificación de la ronda 1 está en su cuadernillo individual.
+    El cuestionario está en el mismo enlace de la ronda 1. Use el mismo código de panelista; su calificación de la ronda 1 está en su cuadernillo individual.
   archivo: Relatoria_reunion_23nov.pdf
-  boton: Leer la relatoría de la reunión (PDF)
+  boton_archivo: Leer la relatoría de la reunión (PDF)
+  enlace: https://ee.kobotoolbox.org/x/l11ENIfc
+  boton: Abrir el cuestionario de la ronda 2 (KoboToolbox)
+  plazo: 2026-11-30
 
 cronograma:
   - fecha: 2026-10
